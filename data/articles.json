@@ -1,5 +1,67 @@
 [
   {
+    "title": "DS強すぎ…セガAIが何もできずに終わりました「レトロゲームAI最強決定戦」【前編】",
+    "url": "https://retro-gamer.jp/?p=43444",
+    "sourceName": "レトロゲームで遊ぼう！",
+    "publishedAt": "2026-04-25T14:05:33.000Z",
+    "summary": "レトロゲームのオセロ同士を対戦させる「電脳オセロ対決！」という企画を、今から5年ほど前にやっていました。といっても2回で終わったのですが、初戦の対戦相手はファミコンで発売されたカワダの『オセロ』と、SG-1000用のセガ...",
+    "thumbnailUrl": "",
+    "tags": [
+      "レトロゲーム",
+      "ハードウェア",
+      "ニュース",
+      "コラム",
+      "オセロ",
+      "オセロdeオセロDS",
+      "オセロワールド",
+      "レトロゲームAI最強決定戦",
+      "電脳オセロ対決！"
+    ],
+    "fetchedAt": "2026-04-25T14:09:45.716Z"
+  },
+  {
+    "title": "Lumacode – Cable Length and A/V Switch Testing",
+    "url": "https://retrorgb.com/lumacode-cable-length-and-a-v-switch-testing.html",
+    "sourceName": "RetroRGB",
+    "publishedAt": "2026-04-25T13:43:24.000Z",
+    "summary": "I wanted to test and verify a common use case for Lumacode-modded consoles: Running them through a switch. Doing so would allow people with multiple Lumacode-modded consoles to run…",
+    "thumbnailUrl": "https://retrorgb.com/wp-content/uploads/2026/04/LumacodeSwitchShort-150x150.jpg",
+    "tags": [
+      "レトロゲーム",
+      "ハードウェア",
+      "RetroRGB"
+    ],
+    "fetchedAt": "2026-04-25T14:10:09.928Z"
+  },
+  {
+    "title": "NeoPico-HD – 720p Support Added",
+    "url": "https://retrorgb.com/neopico-hd-720p-support-added.html",
+    "sourceName": "RetroRGB",
+    "publishedAt": "2026-04-25T12:01:38.000Z",
+    "summary": "Developer fliperama86 has just released v0.1.4 of the NeoPico-HD – An open source project that uses a Raspberry Pi Pico 2 (RP2350B) to tap the digital video and audio signals direc…",
+    "thumbnailUrl": "https://retrorgb.com/wp-content/uploads/2026/01/NeoPicoHD-150x150.jpg",
+    "tags": [
+      "レトロゲーム",
+      "ハードウェア",
+      "RetroRGB"
+    ],
+    "fetchedAt": "2026-04-25T14:10:09.928Z"
+  },
+  {
+    "title": "Recalbox RGB JAMMA 2",
+    "url": "https://retrorgb.com/recalbox-rgb-jamma-2.html",
+    "sourceName": "RetroRGB",
+    "publishedAt": "2026-04-25T11:14:57.000Z",
+    "summary": "The RGB JAMMA 2 is Recalbox’s follow-up to their original Raspberry Pi to JAMMA adapter, designed specifically for the Raspberry Pi 5. This comes with the JAMMA adapter itself, as…",
+    "thumbnailUrl": "https://retrorgb.com/wp-content/uploads/2026/04/RecalboxJAMMA2-150x150.jpg",
+    "tags": [
+      "レトロゲーム",
+      "ハードウェア",
+      "RetroRGB"
+    ],
+    "fetchedAt": "2026-04-25T14:10:09.928Z"
+  },
+  {
     "title": "コナミコマンドこと“↑↑↓↓←→←→BA”40周年。もっともよく知られた隠しコマンドとしてギネス世界記録にも登録。初搭載はファミコン版『グラディウス』【今日は何の日？】 | ゲーム・エンタメ最新情報のファミ通.com",
     "url": "https://www.famitsu.com/article/202604/72547",
     "sourceName": "ファミ通.com",
@@ -413,54 +475,6 @@
       "Entertainment"
     ],
     "fetchedAt": "2026-04-25T01:14:06.730Z"
-  },
-  {
-    "title": "Saturn Fighter Ninku Gets a Fan Translation!",
-    "url": "https://retrorgb.com/saturn-fighter-ninku-gets-a-fan-translation.html",
-    "sourceName": "RetroRGB",
-    "publishedAt": "2026-04-22T22:43:59.000Z",
-    "summary": "Exxistance does it again and releases a fan translation based on the anime and manga series Ninku. The fighting game follows the frog-looking character Fūsuke, who is immensely pow…",
-    "thumbnailUrl": "https://retrorgb.com/wp-content/uploads/2026/04/Ninku-fan-translatiion-150x150.png",
-    "tags": [
-      "レトロゲーム",
-      "ハードウェア",
-      "RetroRGB"
-    ],
-    "fetchedAt": "2026-04-24T22:48:00.936Z"
-  },
-  {
-    "title": "Shining Force 3 #BestOfSaturn",
-    "url": "https://www.segasaturnshiro.com/2026/04/22/shining-force-3-bestofsaturn/",
-    "sourceName": "SEGA SATURN, SHIRO!",
-    "publishedAt": "2026-04-22T18:16:06.000Z",
-    "summary": "Camelot Software Planning unleashed the massively ambitious Shining Force 3 trilogy in Japan over a 12-month span starting December 1997. The trilogy comprises three SRPG “scenario…",
-    "thumbnailUrl": "",
-    "tags": [
-      "レトロゲーム",
-      "セガサターン",
-      "Best Of Saturn",
-      "#BestOfSaturn",
-      "BestOfSaturn",
-      "saturn",
-      "sega",
-      "sega saturn",
-      "Shining",
-      "Shining Force"
-    ],
-    "fetchedAt": "2026-04-24T22:48:04.543Z"
-  },
-  {
-    "title": "\"I Almost Can't Express How Joyful It Is\" - '90s Euro Platformer 'Moon Child' Goes Viral",
-    "url": "https://www.timeextension.com/news/2026/04/i-almost-cant-express-how-joyful-it-is-90s-euro-platformer-moon-child-goes-viral",
-    "sourceName": "Time Extension",
-    "publishedAt": "2026-04-22T16:30:00.000Z",
-    "summary": "\"It's a wonderful, surreal, wild ride\". Moon Child , an obscure 2D platformer from the early '90s, has found an unexpected lease of life online in 2026. Developed by the Dutch stud…",
-    "thumbnailUrl": "https://images.timeextension.com/b6fe7d48e5f0b/small.jpg",
-    "tags": [
-      "レトロゲーム",
-      "ニュース"
-    ],
-    "fetchedAt": "2026-04-24T22:47:56.830Z"
   },
   {
     "title": "駿河屋『スペースファンタジーゾーン』の&quot;非正規品&quot;認め謝罪。謎の海賊版業者「PCE Works」とは？",
@@ -1654,19 +1668,6 @@
     "sourceName": "8BITS",
     "publishedAt": "2012-09-16T15:44:28.000Z",
     "summary": "ブラザー工業 タケルより1990年2月に発売された、X68K版「天九牌スペシャル -桃源の宴-」のゲームデータページ。",
-    "thumbnailUrl": "",
-    "tags": [
-      "レトロゲーム",
-      "データベース"
-    ],
-    "fetchedAt": "2026-04-24T23:10:52.550Z"
-  },
-  {
-    "title": "天九牌",
-    "url": "http://www.8-bits.info/gamelist/X68K/info/info_d9VfgApzYHtS4jIb.php",
-    "sourceName": "8BITS",
-    "publishedAt": "2012-09-11T15:51:21.000Z",
-    "summary": "スタジオパンサーより1989年9月に発売された、X68K版「天九牌」のゲームデータページ。",
     "thumbnailUrl": "",
     "tags": [
       "レトロゲーム",
