@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Retro Game Media",
+    "rssUrl": "https://retrogamemedia.com/blog/feed/",
+    "tags": ["レトロゲーム", "読みもの"],
+    "language": "ja",
+    "maxSavedItems": 12,
+    "enabled": true
+  },
+  {
+    "name": "BAKUTENDO",
+    "rssUrl": "https://bakutendo.net/feed",
+    "tags": ["レトロゲーム", "ファミコン", "ハードウェア"],
+    "language": "ja",
+    "maxSavedItems": 12,
+    "enabled": true
+  },
+  {
+    "name": "レトロゲーム専門ZEROブログ",
+    "rssUrl": "https://zerogama.hatenablog.com/feed",
+    "tags": ["レトロゲーム", "メガドライブ", "PCエンジン"],
+    "language": "ja",
+    "maxSavedItems": 18,
+    "enabled": true
+  },
+  {
+    "name": "たなかさん家でレトロゲ",
+    "rssUrl": "https://meichan-t.hatenablog.com/feed",
+    "tags": ["レトロゲーム", "ファミコン", "ゲームボーイ"],
+    "language": "ja",
+    "requireRetroKeywords": true,
+    "maxSavedItems": 18,
+    "enabled": true
+  },
+  {
+    "name": "レトロゲーム部屋住人ループデプトさんの名作ゲーム紹介",
+    "rssUrl": "https://loopdept.hatenablog.com/feed",
+    "tags": ["レトロゲーム", "メガドライブ", "名作紹介"],
+    "language": "ja",
+    "requireRetroKeywords": true,
+    "maxSavedItems": 18,
+    "enabled": true
+  },
+  {
+    "name": "8BITS",
+    "rssUrl": "https://www.8-bits.info/rss.xml",
+    "tags": ["レトロゲーム", "データベース"],
+    "language": "ja",
+    "maxSavedItems": 16,
+    "enabled": true
+  },
+  {
+    "name": "レトロゲームで遊ぼう！",
+    "rssUrl": "https://retro-gamer.jp/?feed=rss2",
+    "tags": ["レトロゲーム", "ハードウェア", "ニュース"],
+    "language": "ja",
+    "requireRetroKeywords": true,
+    "maxSavedItems": 8,
+    "enabled": true
+  },
+  {
+    "name": "ファミコンのネタ!!",
+    "rssUrl": "https://famicoms.net/?xml",
+    "tags": ["レトロゲーム", "ファミコン", "ニュース"],
+    "language": "ja",
+    "maxSavedItems": 12,
+    "enabled": true
+  },
+  {
+    "name": "ファミ通.com",
+    "type": "newsSitemap",
+    "indexUrl": "https://www.famitsu.com/newsSitemap.xml",
+    "tags": ["レトロゲーム", "大手メディア"],
+    "language": "ja",
+    "requireRetroKeywords": true,
+    "maxItems": 20,
+    "maxSavedItems": 12,
+    "enabled": true
+  },
+  {
+    "name": "電ファミニコゲーマー",
+    "rssUrl": "https://news.denfaminicogamer.jp/feed",
+    "tags": ["レトロゲーム", "大手メディア"],
+    "language": "ja",
+    "requireRetroKeywords": true,
+    "maxSavedItems": 10,
+    "enabled": true
+  },
+  {
+    "name": "4Gamer.net",
+    "rssUrl": "https://www.4gamer.net/rss/index.xml",
+    "tags": ["レトロゲーム", "大手メディア"],
+    "language": "ja",
+    "requireRetroKeywords": true,
+    "maxSavedItems": 10,
+    "enabled": true
+  },
+  {
+    "name": "Time Extension",
+    "rssUrl": "https://www.timeextension.com/feeds/latest",
+    "tags": ["レトロゲーム", "ニュース"],
+    "language": "en",
+    "maxSavedItems": 18,
+    "enabled": true
+  },
+  {
+    "name": "RetroRGB",
+    "rssUrl": "https://retrorgb.com/category/retrorgb/feed",
+    "tags": ["レトロゲーム", "ハードウェア"],
+    "language": "en",
+    "maxSavedItems": 10,
+    "enabled": true
+  },
+  {
+    "name": "SEGA SATURN, SHIRO!",
+    "rssUrl": "https://www.segasaturnshiro.com/feed/",
+    "tags": ["レトロゲーム", "セガサターン"],
+    "language": "en",
+    "maxSavedItems": 10,
+    "enabled": true
+  }
+]

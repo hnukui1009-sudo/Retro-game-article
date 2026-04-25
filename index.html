@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Game Press Clip</title>
+    <meta
+      name="description"
+      content="レトロゲーム関連記事をRSS中心で自動収集して一覧表示する、GitHub Pages向けの静的リンク集サイトです。"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="hero-kicker">RETRO GAME PRESS CLIP</p>
+          <h1>レトロゲーム関連記事リンク集</h1>
+          <p class="hero-lead">
+            ファミコン、スーパーファミコン、メガドライブ、PCエンジン、ゲームボーイ、
+            アーケードゲーム周辺の話題をRSS/Atomから集めて見やすく並べる、雑誌風の静的サイトです。
+          </p>
+        </div>
+        <div class="hero-panel">
+          <p class="panel-label">Collector's Memo</p>
+          <div class="hero-stats">
+            <div>
+              <span class="stat-label">表示件数</span>
+              <strong id="statusCount">0件</strong>
+            </div>
+            <div>
+              <span class="stat-label">最終取得</span>
+              <strong id="statusUpdated">読み込み中...</strong>
+            </div>
+          </div>
+          <p class="hero-note">
+            保存するのは見出し・リンク・概要・タグなどのメタ情報のみ。記事本文は転載しません。
+          </p>
+        </div>
+      </header>
+
+      <section class="controls" aria-label="検索と絞り込み">
+        <label class="search-box" for="searchInput">
+          <span>キーワード検索</span>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="タイトル、サイト名、概要、タグで検索"
+            autocomplete="off"
+          />
+        </label>
+
+        <div class="tag-box">
+          <div class="tag-box-header">
+            <span>タグ絞り込み</span>
+            <button id="clearFiltersButton" class="ghost-button" type="button">リセット</button>
+          </div>
+          <div id="tagFilters" class="tag-filters" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="info-strip" aria-label="サイト方針">
+        <p>RSS/Atomを配信しているサイトを優先して収集します。</p>
+        <p>robots.txt・利用規約・著作権に配慮し、過剰なアクセスは行いません。</p>
+        <p>公開用データは <code>data/articles.json</code> と <code>data/sources.json</code> で管理します。</p>
+      </section>
+
+      <main class="content">
+        <div id="loadingState" class="state-card">記事データを読み込んでいます...</div>
+        <div id="errorState" class="state-card hidden" role="alert"></div>
+        <div id="emptyState" class="state-card hidden">条件に一致する記事がありません。</div>
+        <section id="articles" class="article-grid" aria-live="polite"></section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Retro Game Press Clip</p>
+        <p>静的HTML + JSON + GitHub Actions + GitHub Pages で運用</p>
+      </footer>
+    </div>
+
+    <noscript>
+      <div class="noscript-banner">このサイトの一覧表示にはJavaScriptが必要です。</div>
+    </noscript>
+  </body>
+</html>

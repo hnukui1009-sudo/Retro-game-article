@@ -1,0 +1,14 @@
+{
+  "name": "retro-game-press-clip",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GitHub Pages で公開できるレトロゲーム関連記事の静的リンク集サイト",
+  "scripts": {
+    "fetch": "node scripts/fetch-rss.js",
+    "start": "node scripts/dev-server.js",
+    "preview": "node scripts/dev-server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
