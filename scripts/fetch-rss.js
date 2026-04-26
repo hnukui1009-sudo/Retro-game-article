@@ -102,6 +102,7 @@ const TRACKING_PARAMS = new Set([
 
 async function main() {
   await fs.mkdir(DATA_DIR, { recursive: true });
+  const runFetchedAt = new Date().toISOString();
 
   const sources = normalizeSources(await readJsonFile(SOURCES_FILE, []));
   const existingArticles = await readJsonFile(ARTICLES_FILE, []);
@@ -139,7 +140,7 @@ async function main() {
       let newItemsForSource = 0;
 
       for (const item of items) {
-        const article = buildArticle(item, source);
+        const article = buildArticle(item, source, runFetchedAt);
 
         if (!article || !shouldKeepArticle(article, source)) {
           continue;
@@ -492,7 +493,7 @@ function extractAtomCategories(xml) {
     .filter(Boolean);
 }
 
-function buildArticle(item, source) {
+function buildArticle(item, source, fetchedAtOverride) {
   const baseUrl = source.rssUrl || source.indexUrl;
   const rawUrl = normalizeUrl(item.link || "", baseUrl, { allowEmpty: true });
 
@@ -512,7 +513,7 @@ function buildArticle(item, source) {
     rawUrl,
   );
   const tags = normalizeTags([...(source.tags || []), ...(item.categories || [])]);
-  const fetchedAt = new Date().toISOString();
+  const fetchedAt = toIsoString(fetchedAtOverride, new Date().toISOString());
 
   return {
     title,

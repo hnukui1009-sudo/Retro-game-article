@@ -4,6 +4,8 @@ const state = {
   activeTag: "",
 };
 
+const NEW_ARTICLE_WINDOW_MS = 30 * 60 * 1000;
+
 const elements = {
   searchInput: document.getElementById("searchInput"),
   clearFiltersButton: document.getElementById("clearFiltersButton"),
@@ -119,6 +121,7 @@ function getFilteredArticles() {
 function render() {
   const filteredArticles = getFilteredArticles();
   const lastUpdated = getLastUpdatedAt(state.articles);
+  const latestFetchedAt = lastUpdated;
 
   elements.statusCount.textContent = `${filteredArticles.length}件 / 全${state.articles.length}件`;
   elements.statusUpdated.textContent = lastUpdated
@@ -143,7 +146,9 @@ function render() {
   }
 
   elements.emptyState.classList.add("hidden");
-  elements.articles.replaceChildren(...filteredArticles.map(createArticleCard));
+  elements.articles.replaceChildren(
+    ...filteredArticles.map((article) => createArticleCard(article, latestFetchedAt)),
+  );
 }
 
 function renderTagFilters() {
@@ -210,7 +215,7 @@ function createTagButton({ label, count, active, onClick }) {
   return button;
 }
 
-function createArticleCard(article) {
+function createArticleCard(article, latestFetchedAt) {
   const card = document.createElement("article");
   card.className = "article-card";
 
@@ -220,16 +225,28 @@ function createArticleCard(article) {
   const sourceRow = document.createElement("div");
   sourceRow.className = "card-source-row";
 
+  const sourceMeta = document.createElement("div");
+  sourceMeta.className = "source-meta";
+
   const sourceBadge = document.createElement("span");
   sourceBadge.className = "source-badge";
   sourceBadge.textContent = article.sourceName;
+
+  sourceMeta.appendChild(sourceBadge);
+
+  if (isNewArticle(article, latestFetchedAt)) {
+    const newBadge = document.createElement("span");
+    newBadge.className = "new-badge";
+    newBadge.textContent = "NEW";
+    sourceMeta.appendChild(newBadge);
+  }
 
   const publishedDate = document.createElement("time");
   publishedDate.className = "published-date";
   publishedDate.dateTime = article.publishedAt;
   publishedDate.textContent = formatDate(article.publishedAt);
 
-  sourceRow.append(sourceBadge, publishedDate);
+  sourceRow.append(sourceMeta, publishedDate);
 
   const title = document.createElement("h2");
   title.className = "card-title";
@@ -296,6 +313,21 @@ function createArticleCard(article) {
   card.appendChild(footer);
 
   return card;
+}
+
+function isNewArticle(article, latestFetchedAt) {
+  if (!latestFetchedAt) {
+    return false;
+  }
+
+  const articleTime = Date.parse(article.fetchedAt);
+  const latestTime = Date.parse(latestFetchedAt);
+
+  if (Number.isNaN(articleTime) || Number.isNaN(latestTime)) {
+    return false;
+  }
+
+  return latestTime - articleTime >= 0 && latestTime - articleTime <= NEW_ARTICLE_WINDOW_MS;
 }
 
 function getLastUpdatedAt(articles) {
