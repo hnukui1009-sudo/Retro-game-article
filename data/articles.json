@@ -1,5 +1,33 @@
 [
   {
+    "title": "【第2回 ファミコンオリパ】新春福レトロゲームオリパ｜過去開催",
+    "url": "https://retrogamemedia.com/oripa-002/",
+    "sourceName": "Retro Game Media",
+    "publishedAt": "2026-04-26T08:39:58.000Z",
+    "summary": "紹介動画 オリパ販売開始日 2026年 1月1日（木）0時〜 【エントリー商品】 ラストワンショー 『まじかるドロピー』 ★オサカナ店長賞★ 熱血！すとりーとバスケット ろくでなしBLUES 闇の仕事人 KAGE ★特賞 […]",
+    "thumbnailUrl": "",
+    "tags": [
+      "レトロゲーム",
+      "読みもの",
+      "オリパ"
+    ],
+    "fetchedAt": "2026-04-26T10:08:25.779Z"
+  },
+  {
+    "title": "【第1回 ファミコンオリパ】レトゲーメディア公開記念！ファミコンオリパ｜過去開催",
+    "url": "https://retrogamemedia.com/oripa-001/",
+    "sourceName": "Retro Game Media",
+    "publishedAt": "2026-04-26T08:16:54.000Z",
+    "summary": "紹介動画 オリパ販売開始日 2025年 ９月２７日（土）１３時〜 エントリー商品 🏆オサカナ店長賞🏆 クライシスフォース 🎖️特賞🎖️ スプラッターハウス ドラゴンファイター ヒットラーの復活 田代まさしのプリンセスがい […]",
+    "thumbnailUrl": "",
+    "tags": [
+      "レトロゲーム",
+      "読みもの",
+      "オリパ"
+    ],
+    "fetchedAt": "2026-04-26T10:08:25.779Z"
+  },
+  {
     "title": "For Over 35 Years, A Sequel To 'Head Over Heels' Has Been Developed By One Man In Secret, And It's Coming To Amiga And ST Next Month",
     "url": "https://www.timeextension.com/news/2026/04/for-over-35-years-a-sequel-to-head-over-heels-has-been-developed-by-one-man-in-secret-and-its-coming-to-amiga-and-st-next-month",
     "sourceName": "Time Extension",
@@ -447,6 +475,19 @@
       "ニュース"
     ],
     "fetchedAt": "2026-04-24T22:47:56.830Z"
+  },
+  {
+    "title": "A Classic R-Type Game Boy Color Game Is Being Resurrected On Modern Platforms, Later This Month",
+    "url": "https://www.timeextension.com/news/2026/04/a-classic-r-type-game-boy-color-game-is-being-resurrected-on-modern-platforms-later-this-month",
+    "sourceName": "Time Extension",
+    "publishedAt": "2026-04-23T13:00:00.000Z",
+    "summary": "\"That long-imagined IF has finally become reality\". In the run-up to the Tokyo Game Show, City Connection has revealed that it will release a new version of Bits Studios' 1999 Game…",
+    "thumbnailUrl": "https://images.timeextension.com/5680ec8839ebe/small.jpg",
+    "tags": [
+      "レトロゲーム",
+      "ニュース"
+    ],
+    "fetchedAt": "2026-04-26T10:09:10.126Z"
   },
   {
     "title": "NEOGEO『メタルスラッグ』が1万円切ってる 復刻版ソフトが安すぎて歓喜!!",
@@ -1674,5 +1715,31 @@
       "データベース"
     ],
     "fetchedAt": "2026-04-24T23:10:52.550Z"
+  },
+  {
+    "title": "天九牌",
+    "url": "http://www.8-bits.info/gamelist/X68K/info/info_d9VfgApzYHtS4jIb.php",
+    "sourceName": "8BITS",
+    "publishedAt": "2012-09-11T15:51:21.000Z",
+    "summary": "スタジオパンサーより1989年9月に発売された、X68K版「天九牌」のゲームデータページ。",
+    "thumbnailUrl": "",
+    "tags": [
+      "レトロゲーム",
+      "データベース"
+    ],
+    "fetchedAt": "2026-04-26T10:08:43.586Z"
+  },
+  {
+    "title": "スライス",
+    "url": "http://www.8-bits.info/gamelist/X68K/info/info_DNYpPTBtDp23jNiw.php",
+    "sourceName": "8BITS",
+    "publishedAt": "2012-09-10T15:25:20.000Z",
+    "summary": "エムエヌエム ソフトウェアより1991年に発売された、X68K版「スライス」のゲームデータページ。",
+    "thumbnailUrl": "",
+    "tags": [
+      "レトロゲーム",
+      "データベース"
+    ],
+    "fetchedAt": "2026-04-26T10:08:43.586Z"
   }
 ]
