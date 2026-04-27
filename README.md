@@ -9,6 +9,8 @@ HTML / CSS / JavaScript と Node.js だけで構成しており、DBサーバー
 - 収集データは `data/articles.json` に保存
 - 収集先は `data/sources.json` で管理
 - GitHub Actions で1時間ごとに自動更新
+- YouTubeのレトロゲーム動画を20本、記事カードとして埋め込み表示
+- YouTube動画枠は毎日09:00 JSTに日替わり更新
 - `workflow_dispatch` で手動実行も可能
 - 差分がある場合のみ `Update articles` でcommit
 - 記事本文は保存せず、見出しやURLなどのメタ情報のみ保持
@@ -82,6 +84,16 @@ HTML / CSS / JavaScript と Node.js だけで構成しており、DBサーバー
     "requireRetroKeywords": true,
     "maxItems": 20,
     "enabled": true
+  },
+  {
+    "name": "Example Retro Longplay Channel",
+    "type": "youtubeChannel",
+    "indexUrl": "https://www.youtube.com/channel/UCxxxxxxxxxxxxxxxxxxxxxx/videos",
+    "tags": ["レトロゲーム", "動画", "YouTube"],
+    "contentKind": "video",
+    "maxItems": 12,
+    "maxDailyItems": 4,
+    "enabled": true
   }
 ]
 ```
@@ -92,11 +104,14 @@ HTML / CSS / JavaScript と Node.js だけで構成しており、DBサーバー
 - `rssUrl`: RSSまたはAtomのURL
 - `type`: 省略時は `rss`。`newsSitemap` を指定するとニュースサイトマップを利用
 - `indexUrl`: `type: "newsSitemap"` のときに使うURL
+- `indexUrl`: `type: "newsSitemap"` や `type: "youtubeChannel"` のときに使うURL
 - `tags`: そのサイトに付与する基本タグ
 - `language`: 記事の主言語。`ja` または `en`
+- `contentKind`: 省略時は `article`。`video` を指定するとYouTube動画候補として扱います
 - `requireRetroKeywords`: `true` のとき、タイトルや概要がレトロゲーム系キーワードに一致した記事だけ保存
 - `maxItems`: そのソースから1回で扱う最大件数
 - `maxSavedItems`: 最終的な `articles.json` に残す上限件数。偏りを抑えるために使います
+- `maxDailyItems`: `contentKind: "video"` のとき、1日分のランダム動画枠に入る上限件数
 - `enabled`: `true` の時だけ収集
 
 言語配分について:
@@ -106,6 +121,7 @@ HTML / CSS / JavaScript と Node.js だけで構成しており、DBサーバー
 - `language` を省略した場合は、タイトルや概要の文字種から簡易判定します
 - 総合ゲームメディアは `requireRetroKeywords: true` を付けて、レトロゲーム系の記事だけ残す運用を推奨します
 - 同じ引用元に偏りすぎないよう、`maxSavedItems` でソースごとの残存件数を調整できます
+- YouTube動画枠は毎日09:00 JSTに固定シードで組み直されるため、1日内では同じ20本が維持されます
 
 追加後は次のどちらかで反映できます。
 
@@ -160,10 +176,12 @@ http://127.0.0.1:4173
 - `workflow_dispatch` により手動実行もできます
 - ワークフローでは `npm install` → `npm run fetch` を実行します
 - `data/articles.json` に差分が出たときだけ `Update articles` でcommit & pushします
+- YouTube動画枠も同じワークフロー内で更新され、UTC日付の切り替わり時点、つまり09:00 JSTに新しい20本へ切り替わります
 
 ## 表示画面
 
 - 記事カード一覧
+- YouTube動画の埋め込みカード
 - キーワード検索
 - タグ絞り込み
 - サイト名、公開日、概要、タグ表示
@@ -173,6 +191,7 @@ http://127.0.0.1:4173
 ## 注意事項
 
 - 違法・過剰なスクレイピングは行わず、RSS/Atomを優先して利用してください
+- YouTube動画は公開チャンネルの `videos` ページからメタ情報だけを低頻度取得し、埋め込みプレイヤーで表示します
 - RSSがない場合のみ、公開ニュースサイトマップや記事のOGメタデータなど公開メタ情報を低頻度で参照します
 - robots.txt、利用規約、著作権に配慮してください
 - 記事本文の転載は禁止です

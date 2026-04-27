@@ -121,7 +121,7 @@ function getFilteredArticles() {
 function render() {
   const filteredArticles = getFilteredArticles();
   const lastUpdated = getLastUpdatedAt(state.articles);
-  const latestFetchedAt = lastUpdated;
+  const latestFetchedAt = getLatestNewMarkerAt(state.articles);
 
   elements.statusCount.textContent = `${filteredArticles.length}件 / 全${state.articles.length}件`;
   elements.statusUpdated.textContent = lastUpdated
@@ -217,7 +217,8 @@ function createTagButton({ label, count, active, onClick }) {
 
 function createArticleCard(article, latestFetchedAt) {
   const card = document.createElement("article");
-  card.className = "article-card";
+  const youtubeEmbedUrl = getYouTubeEmbedUrl(article.url);
+  card.className = `article-card${youtubeEmbedUrl ? " is-video-card" : ""}`;
 
   const top = document.createElement("div");
   top.className = "card-top";
@@ -261,7 +262,22 @@ function createArticleCard(article, latestFetchedAt) {
   top.append(sourceRow, title);
   card.appendChild(top);
 
-  if (article.thumbnailUrl) {
+  if (youtubeEmbedUrl) {
+    const embed = document.createElement("div");
+    embed.className = "video-embed";
+
+    const iframe = document.createElement("iframe");
+    iframe.src = youtubeEmbedUrl;
+    iframe.title = `${article.title} のYouTube動画`;
+    iframe.loading = "lazy";
+    iframe.allow =
+      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.allowFullscreen = true;
+    iframe.referrerPolicy = "strict-origin-when-cross-origin";
+
+    embed.appendChild(iframe);
+    card.appendChild(embed);
+  } else if (article.thumbnailUrl) {
     const thumbnail = document.createElement("div");
     thumbnail.className = "card-thumbnail";
 
@@ -307,7 +323,7 @@ function createArticleCard(article, latestFetchedAt) {
   linkButton.href = article.url;
   linkButton.target = "_blank";
   linkButton.rel = "noopener noreferrer";
-  linkButton.textContent = "記事を読む";
+  linkButton.textContent = youtubeEmbedUrl ? "YouTubeで見る" : "記事を読む";
 
   footer.append(fetchedAt, linkButton);
   card.appendChild(footer);
@@ -316,6 +332,10 @@ function createArticleCard(article, latestFetchedAt) {
 }
 
 function isNewArticle(article, latestFetchedAt) {
+  if (getYouTubeEmbedUrl(article.url)) {
+    return false;
+  }
+
   if (!latestFetchedAt) {
     return false;
   }
@@ -339,6 +359,44 @@ function getLastUpdatedAt(articles) {
     .map((article) => article.fetchedAt)
     .filter(Boolean)
     .sort((left, right) => Date.parse(right) - Date.parse(left))[0];
+}
+
+function getLatestNewMarkerAt(articles) {
+  const articleFetchedAt = articles
+    .filter((article) => !getYouTubeEmbedUrl(article.url))
+    .map((article) => article.fetchedAt)
+    .filter(Boolean)
+    .sort((left, right) => Date.parse(right) - Date.parse(left));
+
+  return articleFetchedAt[0] || getLastUpdatedAt(articles);
+}
+
+function getYouTubeEmbedUrl(url) {
+  const videoId = getYouTubeVideoId(url);
+  return videoId ? `https://www.youtube-nocookie.com/embed/${videoId}` : "";
+}
+
+function getYouTubeVideoId(url) {
+  try {
+    const parsed = new URL(url);
+
+    if (parsed.hostname === "youtu.be") {
+      return parsed.pathname.replace(/^\/+/, "");
+    }
+
+    if (parsed.hostname === "www.youtube.com" || parsed.hostname === "youtube.com") {
+      if (parsed.pathname === "/watch") {
+        return parsed.searchParams.get("v") || "";
+      }
+
+      const pathMatch = parsed.pathname.match(/^\/(?:embed|shorts|live)\/([^/?#]+)/);
+      return pathMatch ? pathMatch[1] : "";
+    }
+  } catch (error) {
+    return "";
+  }
+
+  return "";
 }
 
 function formatDate(value) {

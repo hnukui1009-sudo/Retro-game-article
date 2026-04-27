@@ -9,7 +9,10 @@ const SOURCES_FILE = path.join(DATA_DIR, "sources.json");
 const ARTICLES_FILE = path.join(DATA_DIR, "articles.json");
 
 const MAX_ARTICLES = 300;
+const DAILY_VIDEO_SELECTION_COUNT = 20;
+const MAX_CONTENT_ITEMS = MAX_ARTICLES + DAILY_VIDEO_SELECTION_COUNT;
 const MAX_ITEMS_PER_SOURCE = 40;
+const DEFAULT_MAX_DAILY_VIDEO_ITEMS = 4;
 const TARGET_LANGUAGE_UNITS = {
   ja: 4,
   en: 1,
@@ -106,15 +109,20 @@ async function main() {
 
   const sources = normalizeSources(await readJsonFile(SOURCES_FILE, []));
   const existingArticles = await readJsonFile(ARTICLES_FILE, []);
-  const existingMap = new Map();
   const sourceMap = new Map(sources.map((source) => [source.name, source]));
   const sourceLanguageMap = new Map(sources.map((source) => [source.name, source.language]));
+  const existingArticleMap = new Map();
+  const existingVideoMap = new Map();
 
   for (const article of normalizeExistingArticles(existingArticles)) {
-    existingMap.set(getArticleKey(article.url), article);
+    const source = sourceMap.get(article.sourceName);
+    const targetMap = source && source.contentKind === "video" ? existingVideoMap : existingArticleMap;
+    targetMap.set(getArticleKey(article.url), article);
   }
 
   const enabledSources = sources.filter((source) => source.enabled !== false);
+  const articleSources = enabledSources.filter((source) => source.contentKind !== "video");
+  const videoSources = enabledSources.filter((source) => source.contentKind === "video");
 
   if (!enabledSources.length) {
     console.log("No enabled sources found.");
@@ -124,7 +132,7 @@ async function main() {
 
   let discoveredCount = 0;
 
-  for (const source of enabledSources) {
+  for (const source of articleSources) {
     const sourceName = String(source.name || "").trim() || "Unknown Source";
     const sourceUrl = String(source.rssUrl || source.indexUrl || "").trim();
 
@@ -147,12 +155,12 @@ async function main() {
         }
 
         const key = getArticleKey(article.url);
-        const previous = existingMap.get(key);
+        const previous = existingArticleMap.get(key);
 
         if (previous) {
-          existingMap.set(key, mergeArticle(previous, article));
+          existingArticleMap.set(key, mergeArticle(previous, article));
         } else {
-          existingMap.set(key, article);
+          existingArticleMap.set(key, article);
           newItemsForSource += 1;
           discoveredCount += 1;
         }
@@ -167,19 +175,25 @@ async function main() {
     await sleep(REQUEST_INTERVAL_MS);
   }
 
-  const allArticles = [...existingMap.values()]
+  const allArticles = [...existingArticleMap.values()]
     .filter(isValidArticle)
     .filter((article) => shouldKeepSavedArticle(article, sourceMap))
     .sort(compareArticles);
   const limitedArticles = applyPerSourceLimit(allArticles, sourceMap);
   const nextArticles = rebalanceArticlesByLanguage(limitedArticles, sourceLanguageMap);
+  const nextVideos = await fetchDailyVideoArticles(videoSources, existingVideoMap, runFetchedAt);
+  const combinedArticles = [...nextArticles, ...nextVideos].sort(compareArticles).slice(0, MAX_CONTENT_ITEMS);
 
-  const changed = await writeArticlesIfChanged(nextArticles);
+  const changed = await writeArticlesIfChanged(combinedArticles);
 
   if (changed) {
-    console.log(`[done] Saved ${nextArticles.length} articles. ${discoveredCount} new article(s).`);
+    console.log(
+      `[done] Saved ${combinedArticles.length} items (${nextArticles.length} articles / ${nextVideos.length} videos). ${discoveredCount} new article(s).`,
+    );
   } else {
-    console.log(`[done] No article changes. ${nextArticles.length} article(s) kept.`);
+    console.log(
+      `[done] No article changes. ${combinedArticles.length} item(s) kept (${nextArticles.length} articles / ${nextVideos.length} videos).`,
+    );
   }
 }
 
@@ -198,9 +212,11 @@ function normalizeSources(sources) {
       enabled: source.enabled !== false,
       language: normalizeLanguage(source.language),
       type: normalizeSourceType(source.type, source),
+      contentKind: normalizeContentKind(source.contentKind),
       requireRetroKeywords: source.requireRetroKeywords === true,
       maxItems: Math.min(parseInteger(source.maxItems, MAX_ITEMS_PER_SOURCE), MAX_ITEMS_PER_SOURCE),
       maxSavedItems: Math.max(parseInteger(source.maxSavedItems, MAX_ARTICLES), 1),
+      maxDailyItems: Math.max(parseInteger(source.maxDailyItems, DEFAULT_MAX_DAILY_VIDEO_ITEMS), 1),
     }))
     .filter((source) => source.rssUrl || source.indexUrl);
 }
@@ -208,6 +224,10 @@ function normalizeSources(sources) {
 async function fetchSourceItems(source) {
   if (source.type === "newsSitemap") {
     return fetchNewsSitemapItems(source);
+  }
+
+  if (source.type === "youtubeChannel") {
+    return fetchYouTubeChannelItems(source);
   }
 
   const xml = await fetchFeed(source.rssUrl);
@@ -240,6 +260,11 @@ async function fetchNewsSitemapItems(source) {
   }
 
   return items;
+}
+
+async function fetchYouTubeChannelItems(source) {
+  const html = await fetchFeed(source.indexUrl);
+  return parseYouTubeChannelItems(html).slice(0, source.maxItems || MAX_ITEMS_PER_SOURCE);
 }
 
 function parseInteger(value, fallback) {
@@ -354,7 +379,7 @@ function parseAtomEntry(block) {
   const title = decodeEntities(extractTagText(block, ["title"]));
   const link = decodeEntities(extractAtomLink(block));
   const publishedAt = decodeEntities(extractTagText(block, ["published", "updated"]));
-  const summary = decodeEntities(extractTagText(block, ["summary"]));
+  const summary = decodeEntities(extractTagText(block, ["summary", "media:description"]));
   const thumbnailUrl = decodeEntities(extractThumbnailUrl(block));
   const categories = extractAtomCategories(block);
 
@@ -378,6 +403,19 @@ function parseNewsSitemapItems(xml) {
     summary: "",
     thumbnailUrl: "",
     categories: extractDelimitedTagValues(block, ["news:keywords", "keywords"]),
+  }));
+}
+
+function parseYouTubeChannelItems(html) {
+  const uniqueVideoIds = [...new Set([...String(html || "").matchAll(/"videoId":"([^"]+)"/g)].map((match) => match[1]))];
+
+  return uniqueVideoIds.map((videoId) => ({
+    title: `YouTube Video ${videoId}`,
+    link: `https://www.youtube.com/watch?v=${videoId}`,
+    publishedAt: "",
+    summary: "",
+    thumbnailUrl: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
+    categories: [],
   }));
 }
 
@@ -711,11 +749,19 @@ function normalizeSourceType(value, source) {
     return "newsSitemap";
   }
 
+  if (type === "youtubeChannel") {
+    return "youtubeChannel";
+  }
+
   if (source && source.indexUrl && !source.rssUrl) {
     return "newsSitemap";
   }
 
   return "rss";
+}
+
+function normalizeContentKind(value) {
+  return String(value || "").trim().toLowerCase() === "video" ? "video" : "article";
 }
 
 function normalizeLanguage(value) {
@@ -801,6 +847,238 @@ function compareArticles(left, right) {
   return left.url.localeCompare(right.url);
 }
 
+async function fetchDailyVideoArticles(videoSources, existingVideoMap, runFetchedAt) {
+  if (!videoSources.length) {
+    return [];
+  }
+
+  const rotationKey = getDailyVideoRotationKey(new Date());
+  const reusableVideos = getReusableDailyVideos(existingVideoMap, rotationKey);
+
+  if (reusableVideos.length === DAILY_VIDEO_SELECTION_COUNT) {
+    console.log(`[video] Reusing ${reusableVideos.length} video(s) for ${rotationKey}.`);
+    return reusableVideos.sort(compareArticles);
+  }
+
+  const videoPoolMap = new Map();
+
+  for (const source of videoSources) {
+    const sourceName = String(source.name || "").trim() || "Unknown Source";
+
+    try {
+      console.log(`[video] ${sourceName}`);
+      const items = await fetchSourceItems(source);
+
+      for (const item of items) {
+        const candidate = buildVideoCandidate(item, source);
+
+        if (!candidate) {
+          continue;
+        }
+
+        const key = getArticleKey(candidate.url);
+        if (!videoPoolMap.has(key)) {
+          videoPoolMap.set(key, candidate);
+        }
+      }
+
+      console.log(`[ok] ${sourceName}: pooled ${items.length} video item(s).`);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      console.warn(`[warn] ${sourceName}: ${message}`);
+    }
+
+    await sleep(REQUEST_INTERVAL_MS);
+  }
+
+  const selectedVideos = await pickDailyVideoSelection(
+    [...videoPoolMap.values()].filter(isValidArticle),
+    videoSources,
+    existingVideoMap,
+    rotationKey,
+    runFetchedAt,
+  );
+
+  console.log(`[video] Selected ${selectedVideos.length} video(s) for ${rotationKey}.`);
+  return selectedVideos;
+}
+
+async function pickDailyVideoSelection(videoPool, videoSources, existingVideoMap, rotationKey, runFetchedAt) {
+  if (!videoPool.length) {
+    return [];
+  }
+
+  const sourceMap = new Map(videoSources.map((source) => [source.name, source]));
+  const shuffledPool = shuffleDeterministically(
+    [...videoPool].sort((left, right) => left.url.localeCompare(right.url)),
+    rotationKey,
+  );
+  const selectedKeys = new Set();
+  const selected = [];
+  const perSourceCounts = new Map();
+
+  takeDailyVideos({
+    pool: shuffledPool,
+    sourceMap,
+    perSourceCounts,
+    selected,
+    selectedKeys,
+    enforcePerSourceLimit: true,
+  });
+
+  if (selected.length < DAILY_VIDEO_SELECTION_COUNT) {
+    takeDailyVideos({
+      pool: shuffledPool,
+      sourceMap,
+      perSourceCounts,
+      selected,
+      selectedKeys,
+      enforcePerSourceLimit: false,
+    });
+  }
+
+  const hydratedVideos = [];
+
+  for (let index = 0; index < selected.length && index < DAILY_VIDEO_SELECTION_COUNT; index += 1) {
+    hydratedVideos.push(await hydrateVideoArticle(selected[index], existingVideoMap, runFetchedAt));
+
+    if (index < selected.length - 1) {
+      await sleep(PER_ITEM_REQUEST_INTERVAL_MS);
+    }
+  }
+
+  return hydratedVideos.sort(compareArticles);
+}
+
+function takeDailyVideos({
+  pool,
+  sourceMap,
+  perSourceCounts,
+  selected,
+  selectedKeys,
+  enforcePerSourceLimit,
+}) {
+  for (const article of pool) {
+    if (selected.length >= DAILY_VIDEO_SELECTION_COUNT) {
+      break;
+    }
+
+    const key = getArticleKey(article.url);
+    if (selectedKeys.has(key)) {
+      continue;
+    }
+
+    const source = sourceMap.get(article.sourceName);
+    const maxDailyItems = source ? source.maxDailyItems : DEFAULT_MAX_DAILY_VIDEO_ITEMS;
+    const currentCount = perSourceCounts.get(article.sourceName) || 0;
+
+    if (enforcePerSourceLimit && currentCount >= maxDailyItems) {
+      continue;
+    }
+
+    selected.push(article);
+    selectedKeys.add(key);
+    perSourceCounts.set(article.sourceName, currentCount + 1);
+  }
+}
+
+function buildVideoCandidate(item, source) {
+  const article = buildArticle(item, source, new Date(0).toISOString());
+
+  if (!article || !isYouTubeVideoUrl(article.url)) {
+    return null;
+  }
+
+  return article;
+}
+
+async function hydrateVideoArticle(article, existingVideoMap, runFetchedAt) {
+  const key = getArticleKey(article.url);
+  const existing = existingVideoMap.get(key);
+  let metadata = {};
+
+  try {
+    metadata = await fetchArticleMetadata(article.url);
+  } catch (error) {
+    metadata = {};
+  }
+
+  const nextArticle = {
+    title: cleanText(metadata.title) || article.title,
+    url: article.url,
+    sourceName: article.sourceName,
+    publishedAt: toIsoString(metadata.publishedAt, article.publishedAt),
+    summary: summarize(metadata.summary || article.summary),
+    thumbnailUrl: sanitizeThumbnailUrl(
+      normalizeUrl(metadata.thumbnailUrl || article.thumbnailUrl || "", article.url, { allowEmpty: true }),
+      article.url,
+    ),
+    tags: article.tags,
+    fetchedAt: runFetchedAt,
+  };
+
+  return existing ? mergeArticle(existing, nextArticle) : nextArticle;
+}
+
+function getReusableDailyVideos(existingVideoMap, rotationKey) {
+  return [...existingVideoMap.values()]
+    .filter((article) => isYouTubeVideoUrl(article.url))
+    .filter((article) => getDailyVideoRotationKey(new Date(article.fetchedAt)) === rotationKey)
+    .slice(0, DAILY_VIDEO_SELECTION_COUNT);
+}
+
+function shuffleDeterministically(items, seedText) {
+  const shuffled = [...items];
+  const random = createSeededRandom(seedText);
+
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+  }
+
+  return shuffled;
+}
+
+function createSeededRandom(seedText) {
+  let seed = hashString(seedText);
+
+  return () => {
+    seed += 0x6d2b79f5;
+    let value = seed;
+    value = Math.imul(value ^ (value >>> 15), value | 1);
+    value ^= value + Math.imul(value ^ (value >>> 7), value | 61);
+    return ((value ^ (value >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function hashString(value) {
+  let hash = 2166136261;
+
+  for (const char of String(value || "")) {
+    hash ^= char.charCodeAt(0);
+    hash = Math.imul(hash, 16777619);
+  }
+
+  return hash >>> 0;
+}
+
+function getDailyVideoRotationKey(now) {
+  return new Date(now).toISOString().slice(0, 10);
+}
+
+function isYouTubeVideoUrl(url) {
+  try {
+    const parsed = new URL(url);
+    return (
+      parsed.hostname === "youtu.be" ||
+      parsed.hostname === "www.youtube.com" ||
+      parsed.hostname === "youtube.com"
+    );
+  } catch (error) {
+    return false;
+  }
+}
+
 function isValidArticle(article) {
   return (
     article &&
@@ -814,7 +1092,7 @@ function isValidArticle(article) {
 }
 
 async function writeArticlesIfChanged(articles) {
-  const sortedArticles = [...articles].sort(compareArticles).slice(0, MAX_ARTICLES);
+  const sortedArticles = [...articles].sort(compareArticles).slice(0, MAX_CONTENT_ITEMS);
   const nextContent = `${JSON.stringify(sortedArticles, null, 2)}\n`;
   const currentContent = await readFileIfExists(ARTICLES_FILE);
 
@@ -863,7 +1141,12 @@ async function fetchArticleMetadata(url) {
       extractMetaContent(html, ["og:image", "twitter:image", "thumbnail"]),
     ),
     publishedAt: decodeEntities(
-      extractMetaContent(html, ["article:published_time", "og:published_time", "published_time"]),
+      extractMetaContent(html, [
+        "article:published_time",
+        "og:published_time",
+        "published_time",
+        "datePublished",
+      ]),
     ),
   };
 }
@@ -875,11 +1158,11 @@ function extractMetaContent(html, keys) {
     const escapedKey = escapeRegExp(key);
     const patterns = [
       new RegExp(
-        `<meta[^>]+(?:property|name)=["']${escapedKey}["'][^>]+content=["']([^"']+)["'][^>]*>`,
+        `<meta[^>]+(?:property|name|itemprop)=["']${escapedKey}["'][^>]+content=["']([^"']+)["'][^>]*>`,
         "i",
       ),
       new RegExp(
-        `<meta[^>]+content=["']([^"']+)["'][^>]+(?:property|name)=["']${escapedKey}["'][^>]*>`,
+        `<meta[^>]+content=["']([^"']+)["'][^>]+(?:property|name|itemprop)=["']${escapedKey}["'][^>]*>`,
         "i",
       ),
     ];

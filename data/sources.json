@@ -118,5 +118,65 @@
     "language": "en",
     "maxSavedItems": 10,
     "enabled": true
+  },
+  {
+    "name": "World of Longplays",
+    "type": "youtubeChannel",
+    "indexUrl": "https://www.youtube.com/channel/UCVi6ofFy7QyJJrZ9l0-fwbQ/videos",
+    "tags": ["レトロゲーム", "動画", "YouTube"],
+    "contentKind": "video",
+    "maxItems": 12,
+    "maxDailyItems": 4,
+    "enabled": true
+  },
+  {
+    "name": "NintendoComplete",
+    "type": "youtubeChannel",
+    "indexUrl": "https://www.youtube.com/channel/UC1hYTBZ0dFjntk9PQf0ld6g/videos",
+    "tags": ["レトロゲーム", "動画", "YouTube"],
+    "contentKind": "video",
+    "maxItems": 12,
+    "maxDailyItems": 4,
+    "enabled": true
+  },
+  {
+    "name": "LongplayArchive",
+    "type": "youtubeChannel",
+    "indexUrl": "https://www.youtube.com/channel/UCM8XzXipyTsylZ_WsGKmdKQ/videos",
+    "tags": ["レトロゲーム", "動画", "YouTube"],
+    "contentKind": "video",
+    "maxItems": 12,
+    "maxDailyItems": 4,
+    "enabled": true
+  },
+  {
+    "name": "AL82 Retrogaming Longplays",
+    "type": "youtubeChannel",
+    "indexUrl": "https://www.youtube.com/channel/UCzoMKoGaZXlfLhRkYIOpYlA/videos",
+    "tags": ["レトロゲーム", "動画", "YouTube"],
+    "contentKind": "video",
+    "maxItems": 12,
+    "maxDailyItems": 4,
+    "enabled": true
+  },
+  {
+    "name": "Atari Vintage Players.",
+    "type": "youtubeChannel",
+    "indexUrl": "https://www.youtube.com/channel/UC8TCIdeEfcALjN_iLSyyyYw/videos",
+    "tags": ["レトロゲーム", "動画", "YouTube", "アタリ"],
+    "contentKind": "video",
+    "maxItems": 12,
+    "maxDailyItems": 4,
+    "enabled": true
+  },
+  {
+    "name": "GAMESPUB",
+    "type": "youtubeChannel",
+    "indexUrl": "https://www.youtube.com/channel/UCsQAattdVLLaeIylWzz1kjQ/videos",
+    "tags": ["レトロゲーム", "動画", "YouTube"],
+    "contentKind": "video",
+    "maxItems": 12,
+    "maxDailyItems": 4,
+    "enabled": true
   }
 ]
