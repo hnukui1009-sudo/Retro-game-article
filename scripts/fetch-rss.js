@@ -8,15 +8,15 @@ const DATA_DIR = path.join(ROOT_DIR, "data");
 const SOURCES_FILE = path.join(DATA_DIR, "sources.json");
 const ARTICLES_FILE = path.join(DATA_DIR, "articles.json");
 
-const MAX_ARTICLES = 300;
-const DAILY_VIDEO_SELECTION_COUNT = 20;
-const MAX_CONTENT_ITEMS = MAX_ARTICLES + DAILY_VIDEO_SELECTION_COUNT;
+const ARTICLE_POOL_LIMIT = 300;
+const TOTAL_LIST_ITEMS = 100;
+const ARTICLE_SLOT_SIZE = 1;
+const VIDEO_SLOT_SIZE = 9;
+const TARGET_ARTICLE_COUNT = (TOTAL_LIST_ITEMS * ARTICLE_SLOT_SIZE) / (ARTICLE_SLOT_SIZE + VIDEO_SLOT_SIZE);
+const TARGET_VIDEO_COUNT = TOTAL_LIST_ITEMS - TARGET_ARTICLE_COUNT;
+const MAX_CONTENT_ITEMS = TOTAL_LIST_ITEMS;
 const MAX_ITEMS_PER_SOURCE = 40;
-const DEFAULT_MAX_DAILY_VIDEO_ITEMS = 4;
-const TARGET_LANGUAGE_UNITS = {
-  ja: 4,
-  en: 1,
-};
+const DEFAULT_MAX_DAILY_VIDEO_ITEMS = 12;
 const PER_ITEM_REQUEST_INTERVAL_MS = parseInteger(process.env.PER_ITEM_REQUEST_INTERVAL_MS, 1000);
 const REQUEST_INTERVAL_MS = parseInteger(process.env.REQUEST_INTERVAL_MS, 2500);
 const REQUEST_TIMEOUT_MS = parseInteger(process.env.REQUEST_TIMEOUT_MS, 15000);
@@ -110,7 +110,6 @@ async function main() {
   const sources = normalizeSources(await readJsonFile(SOURCES_FILE, []));
   const existingArticles = await readJsonFile(ARTICLES_FILE, []);
   const sourceMap = new Map(sources.map((source) => [source.name, source]));
-  const sourceLanguageMap = new Map(sources.map((source) => [source.name, source.language]));
   const existingArticleMap = new Map();
   const existingVideoMap = new Map();
 
@@ -180,9 +179,9 @@ async function main() {
     .filter((article) => shouldKeepSavedArticle(article, sourceMap))
     .sort(compareArticles);
   const limitedArticles = applyPerSourceLimit(allArticles, sourceMap);
-  const nextArticles = rebalanceArticlesByLanguage(limitedArticles, sourceLanguageMap);
+  const nextArticles = selectArticleHighlights(limitedArticles);
   const nextVideos = await fetchDailyVideoArticles(videoSources, existingVideoMap, runFetchedAt);
-  const combinedArticles = [...nextArticles, ...nextVideos].sort(compareArticles).slice(0, MAX_CONTENT_ITEMS);
+  const combinedArticles = blendContentItems(nextVideos, nextArticles);
 
   const changed = await writeArticlesIfChanged(combinedArticles);
 
@@ -215,7 +214,7 @@ function normalizeSources(sources) {
       contentKind: normalizeContentKind(source.contentKind),
       requireRetroKeywords: source.requireRetroKeywords === true,
       maxItems: Math.min(parseInteger(source.maxItems, MAX_ITEMS_PER_SOURCE), MAX_ITEMS_PER_SOURCE),
-      maxSavedItems: Math.max(parseInteger(source.maxSavedItems, MAX_ARTICLES), 1),
+      maxSavedItems: Math.max(parseInteger(source.maxSavedItems, ARTICLE_POOL_LIMIT), 1),
       maxDailyItems: Math.max(parseInteger(source.maxDailyItems, DEFAULT_MAX_DAILY_VIDEO_ITEMS), 1),
     }))
     .filter((source) => source.rssUrl || source.indexUrl);
@@ -578,39 +577,8 @@ function shouldKeepSavedArticle(article, sourceMap) {
   return source ? shouldKeepArticle(article, source) : true;
 }
 
-function rebalanceArticlesByLanguage(articles, sourceLanguageMap) {
-  if (!articles.length) {
-    return [];
-  }
-
-  const buckets = {
-    ja: [],
-    en: [],
-    other: [],
-  };
-
-  for (const article of articles) {
-    const language = classifyArticleLanguage(article, sourceLanguageMap);
-    if (language === "ja" || language === "en") {
-      buckets[language].push(article);
-    } else {
-      buckets.other.push(article);
-    }
-  }
-
-  const targetCounts = getBalancedLanguageCounts(buckets.ja.length, buckets.en.length);
-  const selectedKeys = new Set();
-  const selected = [];
-
-  takeArticles(selected, selectedKeys, buckets.ja, targetCounts.ja);
-  takeArticles(selected, selectedKeys, buckets.en, targetCounts.en);
-
-  if (selected.length === 0) {
-    const fallbackPool = [...buckets.ja, ...buckets.en, ...buckets.other].sort(compareArticles);
-    takeArticles(selected, selectedKeys, fallbackPool, MAX_ARTICLES);
-  }
-
-  return selected.sort(compareArticles).slice(0, MAX_ARTICLES);
+function selectArticleHighlights(articles) {
+  return [...articles].sort(compareArticles).slice(0, TARGET_ARTICLE_COUNT);
 }
 
 function applyPerSourceLimit(articles, sourceMap) {
@@ -619,7 +587,7 @@ function applyPerSourceLimit(articles, sourceMap) {
 
   for (const article of articles) {
     const source = sourceMap.get(article.sourceName);
-    const limit = source ? source.maxSavedItems : MAX_ARTICLES;
+    const limit = source ? source.maxSavedItems : ARTICLE_POOL_LIMIT;
     const currentCount = counts.get(article.sourceName) || 0;
 
     if (currentCount >= limit) {
@@ -633,53 +601,9 @@ function applyPerSourceLimit(articles, sourceMap) {
   return selected;
 }
 
-function getBalancedLanguageCounts(jaCount, enCount) {
-  if (jaCount === 0 || enCount === 0) {
-    return {
-      ja: Math.min(jaCount, MAX_ARTICLES),
-      en: Math.min(enCount, Math.max(0, MAX_ARTICLES - Math.min(jaCount, MAX_ARTICLES))),
-    };
-  }
-
-  const unitSize = TARGET_LANGUAGE_UNITS.ja + TARGET_LANGUAGE_UNITS.en;
-  const maxUnits = Math.min(
-    Math.floor(jaCount / TARGET_LANGUAGE_UNITS.ja),
-    Math.floor(enCount / TARGET_LANGUAGE_UNITS.en),
-    Math.floor(MAX_ARTICLES / unitSize),
-  );
-
-  if (maxUnits === 0) {
-    return { ja: 0, en: 0 };
-  }
-
-  return {
-    ja: maxUnits * TARGET_LANGUAGE_UNITS.ja,
-    en: maxUnits * TARGET_LANGUAGE_UNITS.en,
-  };
-}
-
-function classifyArticleLanguage(article, sourceLanguageMap) {
-  const sourceLanguage = normalizeLanguage(sourceLanguageMap.get(article.sourceName));
-
-  if (sourceLanguage === "ja" || sourceLanguage === "en") {
-    return sourceLanguage;
-  }
-
-  const text = `${article.title || ""} ${article.summary || ""}`;
-  if (containsJapanese(text)) {
-    return "ja";
-  }
-
-  if (/[A-Za-z]/.test(text)) {
-    return "en";
-  }
-
-  return "other";
-}
-
 function takeArticles(selected, selectedKeys, articles, count) {
   for (const article of articles) {
-    if (selected.length >= MAX_ARTICLES || count <= 0) {
+    if (selected.length >= ARTICLE_POOL_LIMIT || count <= 0) {
       break;
     }
 
@@ -855,9 +779,9 @@ async function fetchDailyVideoArticles(videoSources, existingVideoMap, runFetche
   const rotationKey = getDailyVideoRotationKey(new Date());
   const reusableVideos = getReusableDailyVideos(existingVideoMap, rotationKey);
 
-  if (reusableVideos.length === DAILY_VIDEO_SELECTION_COUNT) {
+  if (reusableVideos.length === TARGET_VIDEO_COUNT) {
     console.log(`[video] Reusing ${reusableVideos.length} video(s) for ${rotationKey}.`);
-    return reusableVideos.sort(compareArticles);
+    return reusableVideos;
   }
 
   const videoPoolMap = new Map();
@@ -926,10 +850,10 @@ async function pickDailyVideoSelection(videoPool, videoSources, existingVideoMap
     enforcePerSourceLimit: true,
   });
 
-  if (selected.length < DAILY_VIDEO_SELECTION_COUNT) {
-    takeDailyVideos({
-      pool: shuffledPool,
-      sourceMap,
+    if (selected.length < TARGET_VIDEO_COUNT) {
+      takeDailyVideos({
+        pool: shuffledPool,
+        sourceMap,
       perSourceCounts,
       selected,
       selectedKeys,
@@ -939,7 +863,7 @@ async function pickDailyVideoSelection(videoPool, videoSources, existingVideoMap
 
   const hydratedVideos = [];
 
-  for (let index = 0; index < selected.length && index < DAILY_VIDEO_SELECTION_COUNT; index += 1) {
+  for (let index = 0; index < selected.length && index < TARGET_VIDEO_COUNT; index += 1) {
     hydratedVideos.push(await hydrateVideoArticle(selected[index], existingVideoMap, runFetchedAt));
 
     if (index < selected.length - 1) {
@@ -959,7 +883,7 @@ function takeDailyVideos({
   enforcePerSourceLimit,
 }) {
   for (const article of pool) {
-    if (selected.length >= DAILY_VIDEO_SELECTION_COUNT) {
+    if (selected.length >= TARGET_VIDEO_COUNT) {
       break;
     }
 
@@ -1024,7 +948,30 @@ function getReusableDailyVideos(existingVideoMap, rotationKey) {
   return [...existingVideoMap.values()]
     .filter((article) => isYouTubeVideoUrl(article.url))
     .filter((article) => getDailyVideoRotationKey(new Date(article.fetchedAt)) === rotationKey)
-    .slice(0, DAILY_VIDEO_SELECTION_COUNT);
+    .slice(0, TARGET_VIDEO_COUNT);
+}
+
+function blendContentItems(videos, articles) {
+  const ordered = [];
+  const videoQueue = [...videos];
+  const articleQueue = [...articles];
+
+  while (videoQueue.length || articleQueue.length) {
+    takeBatch(ordered, videoQueue, VIDEO_SLOT_SIZE);
+    takeBatch(ordered, articleQueue, ARTICLE_SLOT_SIZE);
+
+    if (!videoQueue.length && articleQueue.length) {
+      takeBatch(ordered, articleQueue, ARTICLE_SLOT_SIZE);
+    }
+  }
+
+  return ordered.slice(0, MAX_CONTENT_ITEMS);
+}
+
+function takeBatch(target, queue, count) {
+  for (let index = 0; index < count && queue.length; index += 1) {
+    target.push(queue.shift());
+  }
 }
 
 function shuffleDeterministically(items, seedText) {
@@ -1092,7 +1039,7 @@ function isValidArticle(article) {
 }
 
 async function writeArticlesIfChanged(articles) {
-  const sortedArticles = [...articles].sort(compareArticles).slice(0, MAX_CONTENT_ITEMS);
+  const sortedArticles = [...articles].slice(0, MAX_CONTENT_ITEMS);
   const nextContent = `${JSON.stringify(sortedArticles, null, 2)}\n`;
   const currentContent = await readFileIfExists(ARTICLES_FILE);
 

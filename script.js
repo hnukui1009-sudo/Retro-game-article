@@ -65,12 +65,7 @@ function normalizeArticles(data) {
     return [];
   }
 
-  return data
-    .map((article) => normalizeArticle(article))
-    .filter(Boolean)
-    .sort((left, right) => {
-      return Date.parse(right.publishedAt) - Date.parse(left.publishedAt);
-    });
+  return data.map((article) => normalizeArticle(article)).filter(Boolean);
 }
 
 function normalizeArticle(article) {

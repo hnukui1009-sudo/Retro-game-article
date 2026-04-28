@@ -1,6 +1,6 @@
 # Retro Game Press Clip
 
-レトロゲーム関連記事をRSS/Atomから自動収集して一覧表示する、GitHub向けの静的リンク集サイトです。  
+レトロゲームのプレイ動画を中心に、関連記事を少量だけ添えて一覧表示する、GitHub向けの静的リンク集サイトです。  
 HTML / CSS / JavaScript と Node.js だけで構成しており、DBサーバーや管理画面は使いません。
 
 ## 特徴
@@ -8,13 +8,14 @@ HTML / CSS / JavaScript と Node.js だけで構成しており、DBサーバー
 - GitHub Pages で公開できる静的サイト
 - 収集データは `data/articles.json` に保存
 - 収集先は `data/sources.json` で管理
-- GitHub Actions で1時間ごとに自動更新
-- YouTubeのレトロゲーム動画を20本、記事カードとして埋め込み表示
-- YouTube動画枠は毎日09:00 JSTに日替わり更新
+- GitHub Actions で毎日09:00 JSTに自動更新
+- 一覧は `動画90件 + 記事10件` の構成
+- 一覧順は `動画9件 → 記事1件` を繰り返す形で生成
+- YouTubeのレトロゲーム動画を記事カードと同じ見た目で埋め込み表示
 - `workflow_dispatch` で手動実行も可能
 - 差分がある場合のみ `Update articles` でcommit
 - 記事本文は保存せず、見出しやURLなどのメタ情報のみ保持
-- 保存時に日本語記事を約8割、英語記事を約2割に調整
+- 動画候補は国内・海外を問わず、レトロゲームのプレイ動画を対象に日替わり抽出
 
 ## 収集対象データ
 
@@ -91,8 +92,8 @@ HTML / CSS / JavaScript と Node.js だけで構成しており、DBサーバー
     "indexUrl": "https://www.youtube.com/channel/UCxxxxxxxxxxxxxxxxxxxxxx/videos",
     "tags": ["レトロゲーム", "動画", "YouTube"],
     "contentKind": "video",
-    "maxItems": 12,
-    "maxDailyItems": 4,
+    "maxItems": 36,
+    "maxDailyItems": 12,
     "enabled": true
   }
 ]
@@ -103,7 +104,6 @@ HTML / CSS / JavaScript と Node.js だけで構成しており、DBサーバー
 - `name`: サイト名
 - `rssUrl`: RSSまたはAtomのURL
 - `type`: 省略時は `rss`。`newsSitemap` を指定するとニュースサイトマップを利用
-- `indexUrl`: `type: "newsSitemap"` のときに使うURL
 - `indexUrl`: `type: "newsSitemap"` や `type: "youtubeChannel"` のときに使うURL
 - `tags`: そのサイトに付与する基本タグ
 - `language`: 記事の主言語。`ja` または `en`
@@ -114,14 +114,14 @@ HTML / CSS / JavaScript と Node.js だけで構成しており、DBサーバー
 - `maxDailyItems`: `contentKind: "video"` のとき、1日分のランダム動画枠に入る上限件数
 - `enabled`: `true` の時だけ収集
 
-言語配分について:
+現在の一覧構成:
 
-- 収集結果は保存時に日本語約80%、英語約20%になるよう調整します
-- 指定言語の記事が不足する場合は、件数を少し減らしてでも8:2の比率を優先します
-- `language` を省略した場合は、タイトルや概要の文字種から簡易判定します
-- 総合ゲームメディアは `requireRetroKeywords: true` を付けて、レトロゲーム系の記事だけ残す運用を推奨します
-- 同じ引用元に偏りすぎないよう、`maxSavedItems` でソースごとの残存件数を調整できます
-- YouTube動画枠は毎日09:00 JSTに固定シードで組み直されるため、1日内では同じ20本が維持されます
+- 最終一覧は合計100件です
+- そのうち動画90件、記事10件になるよう生成します
+- 画面上の並びも `動画9件 → 記事1件` を基本に保ちます
+- YouTube動画枠は毎日09:00 JSTに組み直されるため、1日内では同じ日替わり一覧が維持されます
+- 記事側は総合ゲームメディアに `requireRetroKeywords: true` を付けて、レトロゲーム系の記事だけ残す運用を推奨します
+- 同じ引用元に偏りすぎないよう、`maxSavedItems` と `maxDailyItems` で調整できます
 
 追加後は次のどちらかで反映できます。
 
@@ -172,16 +172,17 @@ http://127.0.0.1:4173
 
 ## 自動更新の仕組み
 
-- `.github/workflows/update-articles.yml` が毎時0分に実行されます
+- `.github/workflows/update-articles.yml` が毎日09:00 JST に実行されます
 - `workflow_dispatch` により手動実行もできます
 - ワークフローでは `npm install` → `npm run fetch` を実行します
 - `data/articles.json` に差分が出たときだけ `Update articles` でcommit & pushします
-- YouTube動画枠も同じワークフロー内で更新され、UTC日付の切り替わり時点、つまり09:00 JSTに新しい20本へ切り替わります
+- YouTube動画枠も同じワークフロー内で更新され、日次で新しい90本へ切り替わります
 
 ## 表示画面
 
 - 記事カード一覧
 - YouTube動画の埋め込みカード
+- 動画9件 + 記事1件の比率で並ぶリスト
 - キーワード検索
 - タグ絞り込み
 - サイト名、公開日、概要、タグ表示
@@ -198,7 +199,7 @@ http://127.0.0.1:4173
 - このプロジェクトでは本文そのものを保存せず、短い概要だけを保存します
 - 取得スクリプトはアクセス頻度を抑えるため、収集先を順番に処理し、待機時間を入れています
 - 取得件数は最大300件に制限しています
-- 収集結果の最終一覧は、日本語記事を優先して約8:2の比率に整えます
+- 最終一覧は動画中心のため、日によって記事より動画の更新が大きく目立つ構成です
 
 ## 記事本文を転載しない方針
 

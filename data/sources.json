@@ -125,8 +125,8 @@
     "indexUrl": "https://www.youtube.com/channel/UCVi6ofFy7QyJJrZ9l0-fwbQ/videos",
     "tags": ["レトロゲーム", "動画", "YouTube"],
     "contentKind": "video",
-    "maxItems": 12,
-    "maxDailyItems": 4,
+    "maxItems": 36,
+    "maxDailyItems": 12,
     "enabled": true
   },
   {
@@ -135,8 +135,8 @@
     "indexUrl": "https://www.youtube.com/channel/UC1hYTBZ0dFjntk9PQf0ld6g/videos",
     "tags": ["レトロゲーム", "動画", "YouTube"],
     "contentKind": "video",
-    "maxItems": 12,
-    "maxDailyItems": 4,
+    "maxItems": 36,
+    "maxDailyItems": 12,
     "enabled": true
   },
   {
@@ -145,8 +145,8 @@
     "indexUrl": "https://www.youtube.com/channel/UCM8XzXipyTsylZ_WsGKmdKQ/videos",
     "tags": ["レトロゲーム", "動画", "YouTube"],
     "contentKind": "video",
-    "maxItems": 12,
-    "maxDailyItems": 4,
+    "maxItems": 36,
+    "maxDailyItems": 12,
     "enabled": true
   },
   {
@@ -155,8 +155,8 @@
     "indexUrl": "https://www.youtube.com/channel/UCzoMKoGaZXlfLhRkYIOpYlA/videos",
     "tags": ["レトロゲーム", "動画", "YouTube"],
     "contentKind": "video",
-    "maxItems": 12,
-    "maxDailyItems": 4,
+    "maxItems": 36,
+    "maxDailyItems": 12,
     "enabled": true
   },
   {
@@ -165,8 +165,8 @@
     "indexUrl": "https://www.youtube.com/channel/UC8TCIdeEfcALjN_iLSyyyYw/videos",
     "tags": ["レトロゲーム", "動画", "YouTube", "アタリ"],
     "contentKind": "video",
-    "maxItems": 12,
-    "maxDailyItems": 4,
+    "maxItems": 36,
+    "maxDailyItems": 12,
     "enabled": true
   },
   {
@@ -175,8 +175,38 @@
     "indexUrl": "https://www.youtube.com/channel/UCsQAattdVLLaeIylWzz1kjQ/videos",
     "tags": ["レトロゲーム", "動画", "YouTube"],
     "contentKind": "video",
-    "maxItems": 12,
-    "maxDailyItems": 4,
+    "maxItems": 36,
+    "maxDailyItems": 12,
+    "enabled": true
+  },
+  {
+    "name": "レトロゲームTV【ゆっくり実況】",
+    "type": "youtubeChannel",
+    "indexUrl": "https://www.youtube.com/channel/UCrhHdxT-kPVVbVnH7W3daRg/videos",
+    "tags": ["レトロゲーム", "動画", "YouTube", "日本語"],
+    "contentKind": "video",
+    "maxItems": 36,
+    "maxDailyItems": 12,
+    "enabled": true
+  },
+  {
+    "name": "40代 無職 独身 貯金無し レトロゲーム実況",
+    "type": "youtubeChannel",
+    "indexUrl": "https://www.youtube.com/channel/UCISmHR8DYIN1OVf7_7WPHZg/videos",
+    "tags": ["レトロゲーム", "動画", "YouTube", "日本語"],
+    "contentKind": "video",
+    "maxItems": 36,
+    "maxDailyItems": 12,
+    "enabled": true
+  },
+  {
+    "name": "レトロゲーゆっくり実況チャンネル",
+    "type": "youtubeChannel",
+    "indexUrl": "https://www.youtube.com/channel/UCorertTw5mbspvF0VL1BQ6Q/videos",
+    "tags": ["レトロゲーム", "動画", "YouTube", "日本語"],
+    "contentKind": "video",
+    "maxItems": 36,
+    "maxDailyItems": 12,
     "enabled": true
   }
 ]
