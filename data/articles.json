@@ -1,24 +1,39 @@
 [
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=0y2UBtmQ40c",
+    "url": "https://www.youtube.com/watch?v=5IiglicNizM",
     "sourceName": "レトロゲーゆっくり実況チャンネル",
-    "publishedAt": "2026-07-13T01:54:37.396Z",
+    "publishedAt": "2026-07-14T01:41:51.282Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/0y2UBtmQ40c/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/5IiglicNizM/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "日本語"
     ],
-    "fetchedAt": "2026-07-09T02:02:46.083Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=66LgjFcwK14",
+    "sourceName": "レトロゲーゆっくり実況チャンネル",
+    "publishedAt": "2026-07-14T01:41:51.282Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/66LgjFcwK14/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube",
+      "日本語"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=7zUA8zkPbH0",
     "sourceName": "レトロゲーゆっくり実況チャンネル",
-    "publishedAt": "2026-07-13T01:54:37.396Z",
+    "publishedAt": "2026-07-14T01:41:51.282Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/7zUA8zkPbH0/hqdefault.jpg",
     "tags": [
@@ -31,24 +46,39 @@
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=8OBwWhnPj1E",
+    "url": "https://www.youtube.com/watch?v=er1dFzwtxvk",
     "sourceName": "レトロゲーゆっくり実況チャンネル",
-    "publishedAt": "2026-07-13T01:54:37.396Z",
+    "publishedAt": "2026-07-14T01:41:51.282Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/8OBwWhnPj1E/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/er1dFzwtxvk/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "日本語"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=iq5ZSszo-7M",
+    "sourceName": "レトロゲーゆっくり実況チャンネル",
+    "publishedAt": "2026-07-14T01:41:51.282Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/iq5ZSszo-7M/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube",
+      "日本語"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=kuquIF0ttsY",
     "sourceName": "レトロゲーゆっくり実況チャンネル",
-    "publishedAt": "2026-07-13T01:54:37.396Z",
+    "publishedAt": "2026-07-14T01:41:51.282Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/kuquIF0ttsY/hqdefault.jpg",
     "tags": [
@@ -61,9 +91,24 @@
   },
   {
     "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=kVa_K7TBjfA",
+    "sourceName": "レトロゲーゆっくり実況チャンネル",
+    "publishedAt": "2026-07-14T01:41:51.282Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/kVa_K7TBjfA/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube",
+      "日本語"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=L4cM_FyD8yE",
     "sourceName": "レトロゲーゆっくり実況チャンネル",
-    "publishedAt": "2026-07-13T01:54:37.396Z",
+    "publishedAt": "2026-07-14T01:41:51.282Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/L4cM_FyD8yE/hqdefault.jpg",
     "tags": [
@@ -78,7 +123,7 @@
     "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=OMWc8log3Rc",
     "sourceName": "レトロゲーゆっくり実況チャンネル",
-    "publishedAt": "2026-07-13T01:54:37.396Z",
+    "publishedAt": "2026-07-14T01:41:51.282Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/OMWc8log3Rc/hqdefault.jpg",
     "tags": [
@@ -90,159 +135,187 @@
     "fetchedAt": "2026-07-13T01:53:27.995Z"
   },
   {
+    "title": "A Look At A Rare CRT + PC Engine Combo",
+    "url": "https://retrorgb.com/a-look-at-a-rare-crt-pc-engine-combo.html",
+    "sourceName": "RetroRGB",
+    "publishedAt": "2026-07-13T23:11:04.000Z",
+    "summary": "Tito from Macho Nacho Productions recently posted a video showcasing his adventure of finding an NEC PC-KD863G – Basically a CRT with a PC Engine built in. I’m sharing this video,…",
+    "thumbnailUrl": "https://retrorgb.com/wp-content/uploads/2026/07/TitoPCECRT-150x150.jpg",
+    "tags": [
+      "レトロゲーム",
+      "ハードウェア",
+      "RetroRGB"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=ssmzwLY3Sog",
+    "url": "https://www.youtube.com/watch?v=pCNwecLvYW8",
     "sourceName": "レトロゲーゆっくり実況チャンネル",
-    "publishedAt": "2026-07-13T01:54:37.395Z",
+    "publishedAt": "2026-07-14T01:41:51.282Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/ssmzwLY3Sog/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/pCNwecLvYW8/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "日本語"
     ],
-    "fetchedAt": "2026-07-12T01:51:06.426Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=sVbhuJ59oeg",
+    "url": "https://www.youtube.com/watch?v=YCE46pQKgj0",
     "sourceName": "レトロゲーゆっくり実況チャンネル",
-    "publishedAt": "2026-07-13T01:54:37.395Z",
+    "publishedAt": "2026-07-14T01:41:51.282Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/sVbhuJ59oeg/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/YCE46pQKgj0/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "日本語"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=4rRpAgUMHus",
+    "url": "https://www.youtube.com/watch?v=AE4ZcKyR9Jk",
     "sourceName": "40代 無職 独身 貯金無し レトロゲーム実況",
-    "publishedAt": "2026-07-13T01:54:34.614Z",
+    "publishedAt": "2026-07-14T01:41:48.355Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/4rRpAgUMHus/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/AE4ZcKyR9Jk/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "日本語"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "『メタルギア』がMSX2で発売された日。“ステルス要素を完全に取り入れた最初のビデオゲーム”としてギネス認定もされたMSX2の代表作【今日は何の日？】 | ゲーム・エンタメ最新情報のファミ通.com",
-    "url": "https://www.famitsu.com/article/202607/80717",
-    "sourceName": "ファミ通.com",
-    "publishedAt": "2026-07-13T00:00:00.000Z",
-    "summary": "過去のこの日、ゲーム業界に何があったのかを振り返る。1987年（昭和62年）7月13日は、MSX2用ソフト『メタルギア』が発売された日。",
-    "thumbnailUrl": "https://cimg.kgl-systems.io/camion/files/80717/thumbnail_mXnS.jpg?x=1280",
-    "tags": [
-      "レトロゲーム",
-      "大手メディア",
-      "Entertainment"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=7ERDjnvH8os",
+    "url": "https://www.youtube.com/watch?v=DcLb2rcykXs",
     "sourceName": "40代 無職 独身 貯金無し レトロゲーム実況",
-    "publishedAt": "2026-07-13T01:54:34.614Z",
+    "publishedAt": "2026-07-14T01:41:48.355Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/7ERDjnvH8os/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/DcLb2rcykXs/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "日本語"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=8NX3Tx1qNW0",
+    "url": "https://www.youtube.com/watch?v=fcRRMewKf0A",
     "sourceName": "40代 無職 独身 貯金無し レトロゲーム実況",
-    "publishedAt": "2026-07-13T01:54:34.614Z",
+    "publishedAt": "2026-07-14T01:41:48.355Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/8NX3Tx1qNW0/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/fcRRMewKf0A/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "日本語"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=djY3E3HwsL0",
+    "url": "https://www.youtube.com/watch?v=hHOLNm0zvaA",
     "sourceName": "40代 無職 独身 貯金無し レトロゲーム実況",
-    "publishedAt": "2026-07-13T01:54:34.614Z",
+    "publishedAt": "2026-07-14T01:41:48.355Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/djY3E3HwsL0/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/hHOLNm0zvaA/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "日本語"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=fwa5ugbv6XQ",
+    "url": "https://www.youtube.com/watch?v=IODtBAvv164",
     "sourceName": "40代 無職 独身 貯金無し レトロゲーム実況",
-    "publishedAt": "2026-07-13T01:54:34.614Z",
+    "publishedAt": "2026-07-14T01:41:48.355Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/fwa5ugbv6XQ/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/IODtBAvv164/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "日本語"
     ],
-    "fetchedAt": "2026-07-12T01:51:06.426Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=jR9s7tl-4dQ",
+    "url": "https://www.youtube.com/watch?v=kRBzaemPiCk",
     "sourceName": "40代 無職 独身 貯金無し レトロゲーム実況",
-    "publishedAt": "2026-07-13T01:54:34.614Z",
+    "publishedAt": "2026-07-14T01:41:48.355Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/jR9s7tl-4dQ/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/kRBzaemPiCk/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "日本語"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=OSE3AVWNWag",
+    "url": "https://www.youtube.com/watch?v=lFbdufGZe6Y",
     "sourceName": "40代 無職 独身 貯金無し レトロゲーム実況",
-    "publishedAt": "2026-07-13T01:54:34.614Z",
+    "publishedAt": "2026-07-14T01:41:48.355Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/OSE3AVWNWag/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/lFbdufGZe6Y/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "日本語"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "Edia's Next Collection Brings Together Three Super Famicom Titles From The Publisher Yanoman",
+    "url": "https://www.timeextension.com/news/2026/07/edias-next-collection-brings-together-three-super-famicom-titles-from-the-publisher-yanoman",
+    "sourceName": "Time Extension",
+    "publishedAt": "2026-07-13T15:00:00.000Z",
+    "summary": "The 'Super Yanoman Collection' arrives this December in Japan. Three Super Famicom titles are set to be rereleased on PC, PS5, PS4, and Nintendo Switch on Thursday, December 10th,…",
+    "thumbnailUrl": "https://images.timeextension.com/b4a34f2997230/small.jpg",
+    "tags": [
+      "レトロゲーム",
+      "ニュース"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=ndAn2IQBC_I",
+    "sourceName": "40代 無職 独身 貯金無し レトロゲーム実況",
+    "publishedAt": "2026-07-14T01:41:48.355Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/ndAn2IQBC_I/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube",
+      "日本語"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=VYJ_kLx2atQ",
     "sourceName": "40代 無職 独身 貯金無し レトロゲーム実況",
-    "publishedAt": "2026-07-13T01:54:34.614Z",
+    "publishedAt": "2026-07-14T01:41:48.355Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/VYJ_kLx2atQ/hqdefault.jpg",
     "tags": [
@@ -255,82 +328,24 @@
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=wK3wsEZbWb8",
+    "url": "https://www.youtube.com/watch?v=YeuaRHpVUA0",
     "sourceName": "40代 無職 独身 貯金無し レトロゲーム実況",
-    "publishedAt": "2026-07-13T01:54:34.614Z",
+    "publishedAt": "2026-07-14T01:41:48.355Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/wK3wsEZbWb8/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/YeuaRHpVUA0/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "日本語"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=Yt0DeyhmMak",
-    "sourceName": "40代 無職 独身 貯金無し レトロゲーム実況",
-    "publishedAt": "2026-07-13T01:54:34.614Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/Yt0DeyhmMak/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube",
-      "日本語"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "Retro Recap: All The Classic Gaming News From The Past Week (July 12th 2026)",
-    "url": "https://www.timeextension.com/features/retro-recap-all-the-classic-gaming-news-from-the-past-week-july-12th-2026",
-    "sourceName": "Time Extension",
-    "publishedAt": "2026-07-12T17:30:00.000Z",
-    "summary": "Super Mario Bros. Special! Rhapsody: A Musical Adventure! Evercade price hike! Welcome to Retro Recap , a regular feature we run each and every weekend which rounds up all of the b…",
-    "thumbnailUrl": "https://images.timeextension.com/19d50bae04d60/small.jpg",
-    "tags": [
-      "レトロゲーム",
-      "ニュース"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=zYx65UG6khA",
-    "sourceName": "40代 無職 独身 貯金無し レトロゲーム実況",
-    "publishedAt": "2026-07-13T01:54:34.614Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/zYx65UG6khA/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube",
-      "日本語"
-    ],
-    "fetchedAt": "2026-07-12T01:51:06.426Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=AKTkTitTeds",
-    "sourceName": "レトロゲームTV【ゆっくり実況】",
-    "publishedAt": "2026-07-13T01:54:31.857Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/AKTkTitTeds/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube",
-      "日本語"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=BSIRonMyBoI",
     "sourceName": "レトロゲームTV【ゆっくり実況】",
-    "publishedAt": "2026-07-13T01:54:31.857Z",
+    "publishedAt": "2026-07-14T01:41:45.583Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/BSIRonMyBoI/hqdefault.jpg",
     "tags": [
@@ -343,54 +358,39 @@
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=C8y7kV2HVFU",
+    "url": "https://www.youtube.com/watch?v=cx2w9qqICMs",
     "sourceName": "レトロゲームTV【ゆっくり実況】",
-    "publishedAt": "2026-07-13T01:54:31.857Z",
+    "publishedAt": "2026-07-14T01:41:45.583Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/C8y7kV2HVFU/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/cx2w9qqICMs/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "日本語"
     ],
-    "fetchedAt": "2026-07-12T01:51:06.426Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=cXQ5b9AXUx8",
+    "url": "https://www.youtube.com/watch?v=IM7J6bnxLeQ",
     "sourceName": "レトロゲームTV【ゆっくり実況】",
-    "publishedAt": "2026-07-13T01:54:31.857Z",
+    "publishedAt": "2026-07-14T01:41:45.583Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/cXQ5b9AXUx8/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/IM7J6bnxLeQ/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "日本語"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=iXbZqkd6s-I",
-    "sourceName": "レトロゲームTV【ゆっくり実況】",
-    "publishedAt": "2026-07-13T01:54:31.857Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/iXbZqkd6s-I/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube",
-      "日本語"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=jbR9ZZSkJTg",
     "sourceName": "レトロゲームTV【ゆっくり実況】",
-    "publishedAt": "2026-07-13T01:54:31.857Z",
+    "publishedAt": "2026-07-14T01:41:45.583Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/jbR9ZZSkJTg/hqdefault.jpg",
     "tags": [
@@ -403,24 +403,9 @@
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=jhr4Nj_E7p0",
-    "sourceName": "レトロゲームTV【ゆっくり実況】",
-    "publishedAt": "2026-07-13T01:54:31.857Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/jhr4Nj_E7p0/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube",
-      "日本語"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=kfvji9z4SCs",
     "sourceName": "レトロゲームTV【ゆっくり実況】",
-    "publishedAt": "2026-07-13T01:54:31.857Z",
+    "publishedAt": "2026-07-14T01:41:45.583Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/kfvji9z4SCs/hqdefault.jpg",
     "tags": [
@@ -432,99 +417,94 @@
     "fetchedAt": "2026-07-13T01:53:27.995Z"
   },
   {
-    "title": "スーパーファミコンのプロ野球ゲーム6選！個性派も定番も！自分の好きなゲームは？",
-    "url": "https://loopdept.hatenablog.com/entry/2026/07/12/183554",
-    "sourceName": "レトロゲーム部屋住人ループデプトさんの名作ゲーム紹介",
-    "publishedAt": "2026-07-12T09:35:54.000Z",
-    "summary": "スーパーファミコンのプロ野球ゲーム6選！個性派も定番も！自分の好きなゲームは？ --- スーファミで遊んだ、プロ野球ゲーム。 この時代はまだまだ沢山のメーカーさんが切磋琢磨して ソフトを開発、発売していましたよね♪ 今回は、僕が持っているプロ野球ゲームのカセットの中から、 個性的なソフトと、定番ソフトを合わせて6本ご紹介します♪ 燃えろプロ野球のスーファミ版…",
-    "thumbnailUrl": "",
-    "tags": [
-      "レトロゲーム",
-      "メガドライブ",
-      "名作紹介",
-      "SFC"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=Nci75bDleWI",
+    "url": "https://www.youtube.com/watch?v=UQ6TaFmkJqo",
     "sourceName": "レトロゲームTV【ゆっくり実況】",
-    "publishedAt": "2026-07-13T01:54:31.857Z",
+    "publishedAt": "2026-07-14T01:41:45.583Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/Nci75bDleWI/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/UQ6TaFmkJqo/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "日本語"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=DSOaWU8hqI4",
-    "sourceName": "レトロゲームTV【ゆっくり実況】",
-    "publishedAt": "2026-07-13T01:54:31.856Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/DSOaWU8hqI4/hqdefault.jpg",
+    "title": "You Can Now Play Virtua Racing On PC, Xbox 360, & Xbox One, Thanks To These Impressive New Emulators",
+    "url": "https://www.timeextension.com/news/2026/07/you-can-now-play-virtua-racing-on-pc-xbox-360-and-xbox-one-thanks-to-these-impressive-new-emulators",
+    "sourceName": "Time Extension",
+    "publishedAt": "2026-07-13T13:30:00.000Z",
+    "summary": "Includes online play, widescreen support, and smoother frame rates. If you're a fan of Sega's Virtua Racing and have been looking for a reason to dive back into the Model 1-based F…",
+    "thumbnailUrl": "https://images.timeextension.com/3df5a091e6f6f/small.jpg",
     "tags": [
       "レトロゲーム",
-      "動画",
-      "YouTube",
-      "日本語"
+      "ニュース"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=ld_df9yYRKQ",
-    "sourceName": "レトロゲームTV【ゆっくり実況】",
-    "publishedAt": "2026-07-13T01:54:31.856Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/ld_df9yYRKQ/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube",
-      "日本語"
-    ],
-    "fetchedAt": "2026-07-12T01:51:06.426Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=x2O3bcEZqrc",
-    "sourceName": "レトロゲームTV【ゆっくり実況】",
-    "publishedAt": "2026-07-13T01:54:31.856Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/x2O3bcEZqrc/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube",
-      "日本語"
-    ],
-    "fetchedAt": "2026-07-11T01:48:39.496Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=e5rASSSSHaw",
+    "url": "https://www.youtube.com/watch?v=2VtmyEj6CtI",
     "sourceName": "GAMESPUB",
-    "publishedAt": "2026-07-13T01:54:29.151Z",
+    "publishedAt": "2026-07-14T01:41:42.751Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/e5rASSSSHaw/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/2VtmyEj6CtI/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=5SQg72S360Q",
+    "sourceName": "GAMESPUB",
+    "publishedAt": "2026-07-14T01:41:42.751Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/5SQg72S360Q/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=fzXM5NxMrTc",
+    "sourceName": "GAMESPUB",
+    "publishedAt": "2026-07-14T01:41:42.751Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/fzXM5NxMrTc/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=GVBWe79KAbk",
+    "sourceName": "GAMESPUB",
+    "publishedAt": "2026-07-14T01:41:42.751Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/GVBWe79KAbk/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=hcRRmaeBAcA",
     "sourceName": "GAMESPUB",
-    "publishedAt": "2026-07-13T01:54:29.151Z",
+    "publishedAt": "2026-07-14T01:41:42.751Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/hcRRmaeBAcA/hqdefault.jpg",
     "tags": [
@@ -536,65 +516,23 @@
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=KQWIV7VU7YI",
+    "url": "https://www.youtube.com/watch?v=l7Zbw_Cyxjk",
     "sourceName": "GAMESPUB",
-    "publishedAt": "2026-07-13T01:54:29.151Z",
+    "publishedAt": "2026-07-14T01:41:42.751Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/KQWIV7VU7YI/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/l7Zbw_Cyxjk/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=M92Ii4B6Bc8",
-    "sourceName": "GAMESPUB",
-    "publishedAt": "2026-07-13T01:54:29.151Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/M92Ii4B6Bc8/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=nY95zCawjjM",
-    "sourceName": "GAMESPUB",
-    "publishedAt": "2026-07-13T01:54:29.151Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/nY95zCawjjM/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "Gamepadla’s Prometheus 82 Input Latency Tester",
-    "url": "https://retrorgb.com/gamepadlas-prometheus-82-input-latency-tester.html",
-    "sourceName": "RetroRGB",
-    "publishedAt": "2026-07-11T15:53:23.000Z",
-    "summary": "The team behind the lag testing platform Gampadla is now selling a device/kit called the Prometheus 82. It’s a combination of a lag testing circuit and a 3D printed brace/solenoid…",
-    "thumbnailUrl": "https://retrorgb.com/wp-content/uploads/2026/07/Prometheus82-150x150.jpg",
-    "tags": [
-      "レトロゲーム",
-      "ハードウェア",
-      "RetroRGB"
-    ],
-    "fetchedAt": "2026-07-12T01:51:06.426Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=nZwLzWpLEk0",
     "sourceName": "GAMESPUB",
-    "publishedAt": "2026-07-13T01:54:29.151Z",
+    "publishedAt": "2026-07-14T01:41:42.751Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/nZwLzWpLEk0/hqdefault.jpg",
     "tags": [
@@ -606,188 +544,128 @@
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=QHUiOmDAZF8",
+    "url": "https://www.youtube.com/watch?v=oSMrpW_PbIU",
     "sourceName": "GAMESPUB",
-    "publishedAt": "2026-07-13T01:54:29.151Z",
+    "publishedAt": "2026-07-14T01:41:42.751Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/QHUiOmDAZF8/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/oSMrpW_PbIU/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=sA3MMuyCmE0",
+    "url": "https://www.youtube.com/watch?v=prr2vgCMz6k",
     "sourceName": "GAMESPUB",
-    "publishedAt": "2026-07-13T01:54:29.151Z",
+    "publishedAt": "2026-07-14T01:41:42.751Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/sA3MMuyCmE0/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/prr2vgCMz6k/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=tY0uRbSctJ0",
-    "sourceName": "GAMESPUB",
-    "publishedAt": "2026-07-13T01:54:29.151Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/tY0uRbSctJ0/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube"
-    ],
-    "fetchedAt": "2026-07-11T01:48:39.496Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=wtBLNEPtJjE",
-    "sourceName": "GAMESPUB",
-    "publishedAt": "2026-07-13T01:54:29.151Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/wtBLNEPtJjE/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=FIbQ5ecyo6Q",
-    "sourceName": "Atari Vintage Players.",
-    "publishedAt": "2026-07-13T01:54:26.389Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/FIbQ5ecyo6Q/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube",
-      "アタリ"
-    ],
-    "fetchedAt": "2026-07-12T01:51:06.426Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=jtBjBaRdblk",
-    "sourceName": "Atari Vintage Players.",
-    "publishedAt": "2026-07-13T01:54:26.389Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/jtBjBaRdblk/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube",
-      "アタリ"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=3KjsRDBAwM8",
-    "sourceName": "Atari Vintage Players.",
-    "publishedAt": "2026-07-13T01:54:26.388Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/3KjsRDBAwM8/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube",
-      "アタリ"
-    ],
-    "fetchedAt": "2026-07-12T01:51:06.426Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=5Lra9f-qVRc",
-    "sourceName": "Atari Vintage Players.",
-    "publishedAt": "2026-07-13T01:54:26.388Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/5Lra9f-qVRc/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube",
-      "アタリ"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "SuperStation OneとEvercadeで遊ぶアーケードゲーム",
-    "url": "https://retro-gamer.jp/?p=44712",
-    "sourceName": "レトロゲームで遊ぼう！",
-    "publishedAt": "2026-07-11T08:26:27.000Z",
-    "summary": "SuperStation Oneのウリのひとつは、大量の家庭用ゲーム機だけではなく、昔のパソコンや膨大な数のアーケードゲームにも対応しているところ。しかし、アーケードゲームの場合、実際に基板からROMを入手するのは金銭面...",
+    "title": "Under the Microscope: Batman Forever: The Arcade Game",
+    "url": "https://www.segasaturnshiro.com/2026/07/13/under-the-microscope-batman-forever-the-arcade-game/",
+    "sourceName": "SEGA SATURN, SHIRO!",
+    "publishedAt": "2026-07-13T13:06:48.000Z",
+    "summary": "In this edition, we’re looking at the Saturn version of Batman Forever: The Arcade Game. This was a console port of Acclaim’s and Iguana’s 1996 ST-V arcade title. Some cheat...",
     "thumbnailUrl": "",
     "tags": [
       "レトロゲーム",
-      "ハードウェア",
-      "ニュース",
-      "コラム",
-      "Evercade",
-      "pickup",
-      "SuperStation one"
+      "セガサターン",
+      "Bo Bayles' Hacks & Cheats",
+      "cheat code",
+      "saturn",
+      "sega",
+      "sega saturn",
+      "Under the Microscope"
     ],
-    "fetchedAt": "2026-07-12T01:51:06.426Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=bQXvWpN6hUE",
-    "sourceName": "Atari Vintage Players.",
-    "publishedAt": "2026-07-13T01:54:26.388Z",
+    "url": "https://www.youtube.com/watch?v=sgC3pSCsaok",
+    "sourceName": "GAMESPUB",
+    "publishedAt": "2026-07-14T01:41:42.751Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/bQXvWpN6hUE/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/sgC3pSCsaok/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=yah7QcUfUN4",
+    "sourceName": "GAMESPUB",
+    "publishedAt": "2026-07-14T01:41:42.751Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/yah7QcUfUN4/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=Yyqvelk2JvM",
+    "sourceName": "GAMESPUB",
+    "publishedAt": "2026-07-14T01:41:42.751Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/Yyqvelk2JvM/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=3lW9fw2LlxM",
+    "sourceName": "Atari Vintage Players.",
+    "publishedAt": "2026-07-14T01:41:39.952Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/3lW9fw2LlxM/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "アタリ"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=Eoxhxf1M0QE",
+    "url": "https://www.youtube.com/watch?v=B1l-21nMLpk",
     "sourceName": "Atari Vintage Players.",
-    "publishedAt": "2026-07-13T01:54:26.388Z",
+    "publishedAt": "2026-07-14T01:41:39.952Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/Eoxhxf1M0QE/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/B1l-21nMLpk/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "アタリ"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=GQJyEh9RMzQ",
-    "sourceName": "Atari Vintage Players.",
-    "publishedAt": "2026-07-13T01:54:26.388Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/GQJyEh9RMzQ/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube",
-      "アタリ"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=GXwt8Ss5TW0",
     "sourceName": "Atari Vintage Players.",
-    "publishedAt": "2026-07-13T01:54:26.388Z",
+    "publishedAt": "2026-07-14T01:41:39.952Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/GXwt8Ss5TW0/hqdefault.jpg",
     "tags": [
@@ -800,24 +678,24 @@
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=r2c3LpCbmcE",
+    "url": "https://www.youtube.com/watch?v=qEzCxZg3wLY",
     "sourceName": "Atari Vintage Players.",
-    "publishedAt": "2026-07-13T01:54:26.388Z",
+    "publishedAt": "2026-07-14T01:41:39.952Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/r2c3LpCbmcE/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/qEzCxZg3wLY/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "アタリ"
     ],
-    "fetchedAt": "2026-07-12T01:51:06.426Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=RM6GDbSEZtU",
     "sourceName": "Atari Vintage Players.",
-    "publishedAt": "2026-07-13T01:54:26.388Z",
+    "publishedAt": "2026-07-14T01:41:39.952Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/RM6GDbSEZtU/hqdefault.jpg",
     "tags": [
@@ -830,23 +708,36 @@
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=7fKAnoOx_FE",
+    "url": "https://www.youtube.com/watch?v=_SiHAaaYvfo",
     "sourceName": "AL82 Retrogaming Longplays",
-    "publishedAt": "2026-07-13T01:54:23.627Z",
+    "publishedAt": "2026-07-14T01:41:37.159Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/7fKAnoOx_FE/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/_SiHAaaYvfo/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-12T01:51:06.426Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "\"GDQ Is Committed To Supporting Human Rights & Inclusivity\" - GDQ Cancels SNK-Sponsored Stream, After Significant Backlash",
+    "url": "https://www.timeextension.com/news/2026/07/gdq-is-committed-to-supporting-human-rights-and-inclusivity-gdq-cancels-snk-sponsored-stream-after-significant-backlash",
+    "sourceName": "Time Extension",
+    "publishedAt": "2026-07-13T12:30:00.000Z",
+    "summary": "\"Going forward, we will review and strengthen our process for evaluating future sponsors\". The speedrunning organisation Games Done Quick made a speedy U-turn on its decision to ho…",
+    "thumbnailUrl": "https://images.timeextension.com/49773beaf9c00/small.jpg",
+    "tags": [
+      "レトロゲーム",
+      "ニュース"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=7WmuGuRS62M",
     "sourceName": "AL82 Retrogaming Longplays",
-    "publishedAt": "2026-07-13T01:54:23.627Z",
+    "publishedAt": "2026-07-14T01:41:37.159Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/7WmuGuRS62M/hqdefault.jpg",
     "tags": [
@@ -858,37 +749,37 @@
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=fyLHo-E2rAU",
+    "url": "https://www.youtube.com/watch?v=9rsjS524OMI",
     "sourceName": "AL82 Retrogaming Longplays",
-    "publishedAt": "2026-07-13T01:54:23.627Z",
+    "publishedAt": "2026-07-14T01:41:37.159Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/fyLHo-E2rAU/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/9rsjS524OMI/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
-    "title": "任天堂はスーパーマリオ40周年を記念した特別なピンバッジセットを発売する 他",
-    "url": "https://famicoms.net/blog-entry-4427.html",
-    "sourceName": "ファミコンのネタ!!",
-    "publishedAt": "2026-07-11T00:56:42.000Z",
-    "summary": "＜ニュース＞● 「PlayStationディスク終了」に反発拡大 25万人署名でもソニーが揺るがない理由／Yahoo!ニュース （2026/07/10/）● 初代Switchがついに終焉のとき。まずはヨーロッパから／ギズモード・ジャパン （2026/07/09/）＜任天堂＞● 任天堂はスーパーマリオ40周年を記念した特別なピンバッジセットを発売する／Nint…",
-    "thumbnailUrl": "",
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=Mv6nrIDgmYI",
+    "sourceName": "AL82 Retrogaming Longplays",
+    "publishedAt": "2026-07-14T01:41:37.159Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/Mv6nrIDgmYI/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
-      "ファミコン",
-      "ニュース"
+      "動画",
+      "YouTube"
     ],
-    "fetchedAt": "2026-07-11T01:48:39.496Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=oGhQ00x-1nk",
     "sourceName": "AL82 Retrogaming Longplays",
-    "publishedAt": "2026-07-13T01:54:23.627Z",
+    "publishedAt": "2026-07-14T01:41:37.159Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/oGhQ00x-1nk/hqdefault.jpg",
     "tags": [
@@ -902,7 +793,7 @@
     "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=v9HrneOq32Y",
     "sourceName": "AL82 Retrogaming Longplays",
-    "publishedAt": "2026-07-13T01:54:23.627Z",
+    "publishedAt": "2026-07-14T01:41:37.159Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/v9HrneOq32Y/hqdefault.jpg",
     "tags": [
@@ -914,11 +805,11 @@
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=ZkSJ_D5kU_8",
+    "url": "https://www.youtube.com/watch?v=7fKAnoOx_FE",
     "sourceName": "AL82 Retrogaming Longplays",
-    "publishedAt": "2026-07-13T01:54:23.627Z",
+    "publishedAt": "2026-07-14T01:41:37.158Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/ZkSJ_D5kU_8/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/7fKAnoOx_FE/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
@@ -928,65 +819,148 @@
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=SqjCvVQg11Q",
+    "url": "https://www.youtube.com/watch?v=HlGOCVCIGf0",
     "sourceName": "AL82 Retrogaming Longplays",
-    "publishedAt": "2026-07-13T01:54:23.626Z",
+    "publishedAt": "2026-07-14T01:41:37.158Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/SqjCvVQg11Q/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/HlGOCVCIGf0/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=z6T9VR_qCYo",
+    "url": "https://www.youtube.com/watch?v=KZEEaCUAhXY",
     "sourceName": "AL82 Retrogaming Longplays",
-    "publishedAt": "2026-07-13T01:54:23.626Z",
+    "publishedAt": "2026-07-14T01:41:37.158Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/z6T9VR_qCYo/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/KZEEaCUAhXY/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=9VtmgAwElzo",
-    "sourceName": "LongplayArchive",
-    "publishedAt": "2026-07-13T01:54:20.930Z",
+    "url": "https://www.youtube.com/watch?v=mDOWFPS4JtQ",
+    "sourceName": "AL82 Retrogaming Longplays",
+    "publishedAt": "2026-07-14T01:41:37.158Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/9VtmgAwElzo/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/mDOWFPS4JtQ/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "Nintendo's Next Official LEGO Set Could Be Based On Donkey Kong's Arcade Debut",
+    "url": "https://www.timeextension.com/news/2026/07/nintendos-next-official-lego-set-could-be-based-on-donkey-kongs-arcade-debut",
+    "sourceName": "Time Extension",
+    "publishedAt": "2026-07-13T11:30:00.000Z",
+    "summary": "That's according to a new leak. We typically leave most of Nintendo's LEGO announcements to our sister site, Nintendo Life , but this news was simply too much in our wheelhouse for…",
+    "thumbnailUrl": "https://images.timeextension.com/dd4be51e15fdc/small.jpg",
+    "tags": [
+      "レトロゲーム",
+      "ニュース"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=vYh1r3yUGYI",
-    "sourceName": "LongplayArchive",
-    "publishedAt": "2026-07-13T01:54:20.930Z",
+    "url": "https://www.youtube.com/watch?v=vb5VE6FQ1yA",
+    "sourceName": "AL82 Retrogaming Longplays",
+    "publishedAt": "2026-07-14T01:41:37.158Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/vYh1r3yUGYI/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/vb5VE6FQ1yA/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=_Fkabs7nvFk",
+    "sourceName": "LongplayArchive",
+    "publishedAt": "2026-07-14T01:41:34.432Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/_Fkabs7nvFk/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=BlmENH3GLk0",
+    "sourceName": "LongplayArchive",
+    "publishedAt": "2026-07-14T01:41:34.432Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/BlmENH3GLk0/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=oEczs_ocpmo",
+    "sourceName": "LongplayArchive",
+    "publishedAt": "2026-07-14T01:41:34.432Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/oEczs_ocpmo/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=0z3AQwrBMis",
+    "sourceName": "LongplayArchive",
+    "publishedAt": "2026-07-14T01:41:34.431Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/0z3AQwrBMis/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=1ov6OcSKUbw",
+    "sourceName": "LongplayArchive",
+    "publishedAt": "2026-07-14T01:41:34.431Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/1ov6OcSKUbw/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=62XmEu_NLT4",
     "sourceName": "LongplayArchive",
-    "publishedAt": "2026-07-13T01:54:20.929Z",
+    "publishedAt": "2026-07-14T01:41:34.431Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/62XmEu_NLT4/hqdefault.jpg",
     "tags": [
@@ -998,9 +972,23 @@
   },
   {
     "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=cBEivAStio8",
+    "sourceName": "LongplayArchive",
+    "publishedAt": "2026-07-14T01:41:34.431Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/cBEivAStio8/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=ely38JwDTxY",
     "sourceName": "LongplayArchive",
-    "publishedAt": "2026-07-13T01:54:20.929Z",
+    "publishedAt": "2026-07-14T01:41:34.431Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/ely38JwDTxY/hqdefault.jpg",
     "tags": [
@@ -1011,234 +999,107 @@
     "fetchedAt": "2026-07-13T01:53:27.995Z"
   },
   {
-    "title": "Online Ghost Car Portal in Development for Sega Touring Car Championship",
-    "url": "https://www.segasaturnshiro.com/2026/07/10/online-ghost-car-portal-in-development-for-sega-touring-car-championship/",
-    "sourceName": "SEGA SATURN, SHIRO!",
-    "publishedAt": "2026-07-10T16:02:45.000Z",
-    "summary": "Earlier this week, SEGARPGFAN revealed his latest Saturn online project in development, a ghost car portal website for Sega Touring Car Championship! This site connects directly to…",
-    "thumbnailUrl": "",
+    "title": "Guide: An Introduction To Another Century's Episode, FromSoftware's A.C.E. In The Hole",
+    "url": "https://www.timeextension.com/guides/an-introduction-to-another-centurys-episode-fromsoftwares-a-c-e-in-the-hole",
+    "sourceName": "Time Extension",
+    "publishedAt": "2026-07-13T11:00:00.000Z",
+    "summary": "You should \"mecha\" dash for this series. One of the lesser-known but equally fantastic FromSoftware mecha games that started out on the PlayStation 2 is the Another Century’s Episo…",
+    "thumbnailUrl": "https://images.timeextension.com/fb92503a398eb/small.jpg",
     "tags": [
       "レトロゲーム",
-      "セガサターン",
-      "Community",
-      "News",
-      "Homebrew",
-      "NetLink",
-      "racing game",
-      "saturn",
-      "sega",
-      "sega saturn"
+      "ニュース"
     ],
-    "fetchedAt": "2026-07-11T01:48:39.496Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=FmoXP2hnzVA",
+    "url": "https://www.youtube.com/watch?v=eMvuYEMrT0g",
     "sourceName": "LongplayArchive",
-    "publishedAt": "2026-07-13T01:54:20.929Z",
+    "publishedAt": "2026-07-14T01:41:34.431Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/FmoXP2hnzVA/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/eMvuYEMrT0g/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=FnGyDRQfjic",
+    "url": "https://www.youtube.com/watch?v=jjy6_UxcDXs",
     "sourceName": "LongplayArchive",
-    "publishedAt": "2026-07-13T01:54:20.929Z",
+    "publishedAt": "2026-07-14T01:41:34.431Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/FnGyDRQfjic/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/jjy6_UxcDXs/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=iBt-KH8jILo",
+    "url": "https://www.youtube.com/watch?v=lE31vMTfGiM",
     "sourceName": "LongplayArchive",
-    "publishedAt": "2026-07-13T01:54:20.929Z",
+    "publishedAt": "2026-07-14T01:41:34.431Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/iBt-KH8jILo/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/lE31vMTfGiM/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=o3DjssBHBCI",
+    "url": "https://www.youtube.com/watch?v=wKNXO29H8es",
     "sourceName": "LongplayArchive",
-    "publishedAt": "2026-07-13T01:54:20.929Z",
+    "publishedAt": "2026-07-14T01:41:34.431Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/o3DjssBHBCI/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/wKNXO29H8es/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=PnVWNWXWlnA",
-    "sourceName": "LongplayArchive",
-    "publishedAt": "2026-07-13T01:54:20.929Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/PnVWNWXWlnA/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=dS5OztQ9YaU",
-    "sourceName": "LongplayArchive",
-    "publishedAt": "2026-07-13T01:54:20.928Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/dS5OztQ9YaU/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=gD_TEYdZGtA",
+    "url": "https://www.youtube.com/watch?v=-72pTFCufTY",
     "sourceName": "NintendoComplete",
-    "publishedAt": "2026-07-13T01:54:18.191Z",
+    "publishedAt": "2026-07-14T01:41:31.744Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/gD_TEYdZGtA/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/-72pTFCufTY/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=GqQ6THGLNrU",
+    "url": "https://www.youtube.com/watch?v=BU10hMfOxrw",
     "sourceName": "NintendoComplete",
-    "publishedAt": "2026-07-13T01:54:18.191Z",
+    "publishedAt": "2026-07-14T01:41:31.744Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/GqQ6THGLNrU/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/BU10hMfOxrw/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-12T01:51:06.426Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=mtBLS6ToQsc",
-    "sourceName": "NintendoComplete",
-    "publishedAt": "2026-07-13T01:54:18.191Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/mtBLS6ToQsc/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube"
-    ],
-    "fetchedAt": "2026-07-12T01:51:06.426Z"
-  },
-  {
-    "title": "Get to the Hoop! 3D Ball Physics and Corner Three Exploit of NES Double Dribble – Behind the Code",
-    "url": "https://retrorgb.com/get-to-the-hoop-3d-ball-physics-and-corner-three-exploit-of-nes-double-dribble-behind-the-code.html",
-    "sourceName": "RetroRGB",
-    "publishedAt": "2026-07-10T15:49:14.000Z",
-    "summary": "Have you ever watched Family Guy? Did you see the episode where they play Double Dribble and continue to shoot a three-pointer from the top right corner of the screen? That’s a rea…",
-    "thumbnailUrl": "https://retrorgb.com/wp-content/uploads/2026/07/Double-Dribble-Thumb-2-150x150.png",
-    "tags": [
-      "レトロゲーム",
-      "ハードウェア",
-      "RetroRGB",
-      "assembly",
-      "bugs",
-      "corner three",
-      "displaced gamers",
-      "double dribble",
-      "NES",
-      "Programming"
-    ],
-    "fetchedAt": "2026-07-11T01:48:39.496Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=qUUap-HXIRs",
-    "sourceName": "NintendoComplete",
-    "publishedAt": "2026-07-13T01:54:18.191Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/qUUap-HXIRs/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube"
-    ],
-    "fetchedAt": "2026-07-12T01:51:06.426Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=SWIi0Di2-l4",
-    "sourceName": "NintendoComplete",
-    "publishedAt": "2026-07-13T01:54:18.191Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/SWIi0Di2-l4/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=3GbHnNZi3XM",
-    "sourceName": "NintendoComplete",
-    "publishedAt": "2026-07-13T01:54:18.190Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/3GbHnNZi3XM/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=8VuU4DWF6f8",
-    "sourceName": "NintendoComplete",
-    "publishedAt": "2026-07-13T01:54:18.190Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/8VuU4DWF6f8/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=Ccpa-tuKvQ0",
     "sourceName": "NintendoComplete",
-    "publishedAt": "2026-07-13T01:54:18.190Z",
+    "publishedAt": "2026-07-14T01:41:31.744Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/Ccpa-tuKvQ0/hqdefault.jpg",
     "tags": [
@@ -1250,11 +1111,25 @@
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=DPL1vIGH5eg",
+    "url": "https://www.youtube.com/watch?v=CGAuNQy_zxk",
     "sourceName": "NintendoComplete",
-    "publishedAt": "2026-07-13T01:54:18.190Z",
+    "publishedAt": "2026-07-14T01:41:31.744Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/DPL1vIGH5eg/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/CGAuNQy_zxk/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=gD_TEYdZGtA",
+    "sourceName": "NintendoComplete",
+    "publishedAt": "2026-07-14T01:41:31.744Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/gD_TEYdZGtA/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
@@ -1263,24 +1138,79 @@
     "fetchedAt": "2026-07-13T01:53:27.995Z"
   },
   {
+    "title": "「SEGA UNIVERSE PLAYGROUND」，8月8日に渋谷PARCOで開催決定。「サクラ大戦」原作者・広井王子氏のトークショーに，ライブパフォーマンスなどを展開",
+    "url": "https://www.4gamer.net/games/991/G999110/20260713039/",
+    "sourceName": "4Gamer.net",
+    "publishedAt": "2026-07-13T10:47:56.000Z",
+    "summary": "セガは2026年7月13日，リアルイベント「SEGAUNIVERSEPLAYGROUND」を8月8日に渋谷PARCOで開催すると発表した。本イベントでは，「サクラ大戦」の原作者である広井王子氏を迎えたスペシャルトークショーや，著名なアーティストが出演するライブパフォーマンスなどが予定されている。",
+    "thumbnailUrl": "",
+    "tags": [
+      "レトロゲーム",
+      "大手メディア"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=QxSXCZmjpA8",
+    "url": "https://www.youtube.com/watch?v=IkeveElxi1M",
     "sourceName": "NintendoComplete",
-    "publishedAt": "2026-07-13T01:54:18.190Z",
+    "publishedAt": "2026-07-14T01:41:31.744Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/QxSXCZmjpA8/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/IkeveElxi1M/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=mtBLS6ToQsc",
+    "sourceName": "NintendoComplete",
+    "publishedAt": "2026-07-14T01:41:31.744Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/mtBLS6ToQsc/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-12T01:51:06.426Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=qUUap-HXIRs",
+    "sourceName": "NintendoComplete",
+    "publishedAt": "2026-07-14T01:41:31.744Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/qUUap-HXIRs/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-12T01:51:06.426Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=rpRE6BKO0iI",
+    "sourceName": "NintendoComplete",
+    "publishedAt": "2026-07-14T01:41:31.744Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/rpRE6BKO0iI/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=Uuk6NlymzcA",
     "sourceName": "NintendoComplete",
-    "publishedAt": "2026-07-13T01:54:18.190Z",
+    "publishedAt": "2026-07-14T01:41:31.744Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/Uuk6NlymzcA/hqdefault.jpg",
     "tags": [
@@ -1292,64 +1222,23 @@
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=ZXL4KNPFQiE",
-    "sourceName": "NintendoComplete",
-    "publishedAt": "2026-07-13T01:54:18.190Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/ZXL4KNPFQiE/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "The AYANEO Pocket Micro 2 Is Coming Back In Stock, Adds New 6GB + 128GB Stardust Purple Edition",
-    "url": "https://www.timeextension.com/news/2026/07/the-ayaneo-pocket-micro-2-is-coming-back-in-stock-adds-new-6gb-plus-128gb-stardust-purple-edition",
-    "sourceName": "Time Extension",
-    "publishedAt": "2026-07-10T15:30:00.000Z",
-    "summary": "Previously, only 100 units of the device were allocated overseas. Last Friday, AYANEO opened pre-orders for the AYANEO Pocket Micro 2 , its successor to 2024's AYANEO Pocket Micro…",
-    "thumbnailUrl": "https://images.timeextension.com/dd9c7ff42ff1c/small.jpg",
-    "tags": [
-      "レトロゲーム",
-      "ニュース"
-    ],
-    "fetchedAt": "2026-07-11T01:48:39.496Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=90BgWFEBqtc",
+    "url": "https://www.youtube.com/watch?v=0evP5T_kHrc",
     "sourceName": "World of Longplays",
-    "publishedAt": "2026-07-13T01:54:15.506Z",
+    "publishedAt": "2026-07-14T01:41:29.000Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/90BgWFEBqtc/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/0evP5T_kHrc/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=CtiZsUNFiY4",
-    "sourceName": "World of Longplays",
-    "publishedAt": "2026-07-13T01:54:15.506Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/CtiZsUNFiY4/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube"
-    ],
-    "fetchedAt": "2026-07-12T01:51:06.426Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=F3F8dcJrGJQ",
     "sourceName": "World of Longplays",
-    "publishedAt": "2026-07-13T01:54:15.506Z",
+    "publishedAt": "2026-07-14T01:41:29.000Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/F3F8dcJrGJQ/hqdefault.jpg",
     "tags": [
@@ -1361,37 +1250,9 @@
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=AUSrAK6eLKk",
-    "sourceName": "World of Longplays",
-    "publishedAt": "2026-07-13T01:54:15.505Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/AUSrAK6eLKk/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube"
-    ],
-    "fetchedAt": "2026-07-13T01:53:27.995Z"
-  },
-  {
-    "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=P8TGS8oWwxE",
-    "sourceName": "World of Longplays",
-    "publishedAt": "2026-07-13T01:54:15.505Z",
-    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/P8TGS8oWwxE/hqdefault.jpg",
-    "tags": [
-      "レトロゲーム",
-      "動画",
-      "YouTube"
-    ],
-    "fetchedAt": "2026-07-11T01:48:39.496Z"
-  },
-  {
-    "title": "- YouTube",
     "url": "https://www.youtube.com/watch?v=zCs1fogrSTQ",
     "sourceName": "World of Longplays",
-    "publishedAt": "2026-07-13T01:54:15.505Z",
+    "publishedAt": "2026-07-14T01:41:29.000Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
     "thumbnailUrl": "https://i.ytimg.com/vi/zCs1fogrSTQ/hqdefault.jpg",
     "tags": [
@@ -1403,17 +1264,114 @@
   },
   {
     "title": "- YouTube",
-    "url": "https://www.youtube.com/watch?v=s6caUfdkVhM",
+    "url": "https://www.youtube.com/watch?v=ztEe40RKgJA",
     "sourceName": "World of Longplays",
-    "publishedAt": "2026-07-13T01:54:15.504Z",
+    "publishedAt": "2026-07-14T01:41:29.000Z",
     "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/s6caUfdkVhM/hqdefault.jpg",
+    "thumbnailUrl": "https://i.ytimg.com/vi/ztEe40RKgJA/hqdefault.jpg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube"
     ],
-    "fetchedAt": "2026-07-12T01:51:06.426Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "『サクラ大戦』原作者・広井王子氏によるスペシャルトークショーが開催。セガ不朽の名作が集結したリアルイベントが8月8日に渋谷PARCOにて開催決定、期間限定ショップやフードなど多角的なコンテンツが展開",
+    "url": "https://news.denfaminicogamer.jp/news/2607132r",
+    "sourceName": "電ファミニコゲーマー",
+    "publishedAt": "2026-07-13T10:41:54.000Z",
+    "summary": "セガ不朽の名作が集結したリアルイベントが8月8日に渋谷PARCOにて開催決定。期間限定ショップやフードなど多角的なコンテンツが多数展開",
+    "thumbnailUrl": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/07/PhotoshopExtension_Image-2026-07-13T183229.841-1024x549.png",
+    "tags": [
+      "レトロゲーム",
+      "大手メディア"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=fYNslsKbD4U",
+    "sourceName": "World of Longplays",
+    "publishedAt": "2026-07-14T01:41:28.999Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/fYNslsKbD4U/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=hhLrxKcjios",
+    "sourceName": "World of Longplays",
+    "publishedAt": "2026-07-14T01:41:28.999Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/hhLrxKcjios/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=oqrbv5rAiIM",
+    "sourceName": "World of Longplays",
+    "publishedAt": "2026-07-14T01:41:28.999Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/oqrbv5rAiIM/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=XumuriAMTP0",
+    "sourceName": "World of Longplays",
+    "publishedAt": "2026-07-14T01:41:28.999Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/XumuriAMTP0/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "- YouTube",
+    "url": "https://www.youtube.com/watch?v=zHaQwU9d_F0",
+    "sourceName": "World of Longplays",
+    "publishedAt": "2026-07-14T01:41:28.999Z",
+    "summary": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/zHaQwU9d_F0/hqdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "Hokuto no Ken Longplay (Sega Mark III) [QHD]",
+    "url": "https://www.youtube.com/watch?v=0qrjcurnnis",
+    "sourceName": "AL82 Retrogaming Longplays",
+    "publishedAt": "2026-06-12T07:39:11.000Z",
+    "summary": "Game Info---------------------------------------------------Developer: SegaPublisher: SegaYear of Release: 1986Game Review & Impressions---------------------...",
+    "thumbnailUrl": "https://i.ytimg.com/vi/0qrjcurnnis/maxresdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
     "title": "【ゆっくり実況】サミーの野郎は過去にこんなゲーム売ってたんですわ系タイトル 麻雀ハイパーリアクションＲを救いたい レトロゲーム",
@@ -1431,31 +1389,46 @@
     "fetchedAt": "2026-07-13T01:53:27.995Z"
   },
   {
-    "title": "⚡ WARHAWK on Atari 8-bit — The Space Shooter That Defined a Generation!",
-    "url": "https://www.youtube.com/watch?v=O4dSr4HpZjY",
+    "title": "The Forgotten 1985 Atari Masterpiece: Final Legacy (Atari 8-Bit Full Gameplay)",
+    "url": "https://www.youtube.com/watch?v=-KtdAhH8lyU",
     "sourceName": "Atari Vintage Players.",
-    "publishedAt": "2026-06-08T22:17:04.000Z",
-    "summary": "⚡ WARHAWK on Atari 8-bit — The Space Shooter That Defined a Generation!Pure gameplay. No commentary. Just Warhawk running on real Atari 8-bit hardware.Develo...",
-    "thumbnailUrl": "https://i.ytimg.com/vi/O4dSr4HpZjY/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEggZSgVMA8=&rs=AOn4CLDJaOkRM--M722J1vcCSbCucEr0qQ",
+    "publishedAt": "2026-05-16T14:26:03.000Z",
+    "summary": "Final Legacy (Atari 8-Bit) - Pure Experience No CommentaryDescription:Command the ultimate warships of 2051 and stop the nuclear doomsday computer in this cl...",
+    "thumbnailUrl": "https://i.ytimg.com/vi/-KtdAhH8lyU/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLB3PZe1YmdbAKYrceWOoCEYu91gkg",
     "tags": [
       "レトロゲーム",
       "動画",
       "YouTube",
       "アタリ"
     ],
-    "fetchedAt": "2026-07-12T01:51:06.426Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   },
   {
-    "title": "Random: The Internet Is Going Crazy For This Early 2000s Activision Surfing Game",
-    "url": "https://www.timeextension.com/news/2026/07/random-the-internet-is-going-crazy-for-this-early-2000s-activision-surfing-game",
+    "title": "Pushing the Atari 5200 to the Limit: Popeye Arcade Perfect?",
+    "url": "https://www.youtube.com/watch?v=RR1xXFtGjuY",
+    "sourceName": "Atari Vintage Players.",
+    "publishedAt": "2026-05-13T01:35:57.000Z",
+    "summary": "Popeye (Atari 5200) - Arcade Perfect? | Pure Experience No CommentaryDescription:Experience the most faithful home port of the 1982 Nintendo classic!. Unlike...",
+    "thumbnailUrl": "https://i.ytimg.com/vi/RR1xXFtGjuY/maxresdefault.jpg",
+    "tags": [
+      "レトロゲーム",
+      "動画",
+      "YouTube",
+      "アタリ"
+    ],
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
+  },
+  {
+    "title": "'Super Bomberman Collection' Is Adding Yet Another Japan-Exclusive Bomberman Entry",
+    "url": "https://www.timeextension.com/news/2026/07/super-bomberman-collection-is-adding-yet-another-japan-exclusive-bomberman-entry",
     "sourceName": "Time Extension",
-    "publishedAt": "2026-07-10T15:00:00.000Z",
-    "summary": "The people yearn for Kelly Slater's Pro Surfer. If you told me I'd be waking up to an outpouring of love for Activision and Treyarch's Kelly Slater's Pro Surfer , a 24-year-old spo…",
-    "thumbnailUrl": "https://images.timeextension.com/d88de7d650b7e/small.jpg",
+    "publishedAt": "2026-07-13T10:00:00.000Z",
+    "summary": "'Super Bomberman: Panic Bomber W' joins the party. We have some potentially good news for Bomberman fans to start your week off with a bang. Super Bomberman: Panic Bomber W is fina…",
+    "thumbnailUrl": "https://images.timeextension.com/a7c58374a6541/small.jpg",
     "tags": [
       "レトロゲーム",
       "ニュース"
     ],
-    "fetchedAt": "2026-07-11T01:48:39.496Z"
+    "fetchedAt": "2026-07-14T01:40:38.840Z"
   }
 ]
